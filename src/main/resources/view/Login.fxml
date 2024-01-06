@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/back-electro.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="296.0" fitWidth="448.0" layoutX="321.0" layoutY="14.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo-no-background.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="321.0" layoutY="373.0" text="Email address" textFill="#202046" />
+      <JFXTextField fx:id="txtEmail" layoutX="321.0" layoutY="390.0" prefHeight="25.0" prefWidth="260.0" />
+      <Label layoutX="321.0" layoutY="432.0" text="Password" textFill="#202046" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="321.0" layoutY="449.0" prefHeight="25.0" prefWidth="260.0" />
+      <Label fx:id="lblForget" layoutX="492.0" layoutY="491.0" text="Forgot password" textFill="#3886ce" />
+      <JFXButton buttonType="RAISED" layoutX="321.0" layoutY="532.0" onAction="#LoginButtonOnAction" prefHeight="39.0" prefWidth="260.0" style="-fx-background-color: #FE633D; -fx-background-radius: 5;" text="Login" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblnvalidEmail" layoutX="606.0" layoutY="399.0" textFill="RED" />
+      <Label fx:id="lblInvalidPassword" layoutX="606.0" layoutY="458.0" textFill="RED" />
+   </children>
+</AnchorPane>
