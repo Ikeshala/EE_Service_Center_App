@@ -4,17 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Added plugins.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/back-electro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/logo-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/logo-color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/logo-no-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/logo-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Created the Login view and developed/modified the LoginController.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AdminDashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Admin Dashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/User Management.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e--e-service-center-favicon-color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e--e-service-center-high-resolution-logo-white-transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/logo-black trans.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/AdminDashboard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,18 +33,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaFXApplication" />
         <option value="FxmlFile" />
         <option value="Class" />
-        <option value="JavaFXApplication" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2aZd7VmORwHgWok5XKfl9xBvro5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -52,7 +61,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_directory_selection": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/java",
-    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/resources/images",
+    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade (with Layered Architecture)",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -137,6 +146,7 @@
       <updated>1704529630426</updated>
       <workItem from="1704529631566" duration="88000" />
       <workItem from="1704529868461" duration="3188000" />
+      <workItem from="1704548845539" duration="7942000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -154,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704530182405</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created the Login view and developed/modified the LoginController.">
+      <option name="closed" value="true" />
+      <created>1704549432129</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704549432129</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +181,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added dependencies." />
     <MESSAGE value="Added plugins." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added plugins." />
+    <MESSAGE value="Created the Login view and developed/modified the LoginController." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the Login view and developed/modified the LoginController." />
   </component>
 </project>
