@@ -21,17 +21,15 @@
             <Image url="@../images/logo-no-background.png" />
          </image>
       </ImageView>
-      <Label layoutX="321.0" layoutY="373.0" text="Email address" textFill="#202046" />
-      <JFXTextField fx:id="txtEmail" layoutX="321.0" layoutY="390.0" prefHeight="25.0" prefWidth="260.0" />
-      <Label layoutX="321.0" layoutY="432.0" text="Password" textFill="#202046" />
-      <JFXPasswordField fx:id="txtPassword" layoutX="321.0" layoutY="449.0" prefHeight="25.0" prefWidth="260.0" />
-      <Label fx:id="lblForget" layoutX="492.0" layoutY="491.0" text="Forgot password" textFill="#3886ce" />
-      <JFXButton buttonType="RAISED" layoutX="321.0" layoutY="532.0" onAction="#LoginButtonOnAction" prefHeight="39.0" prefWidth="260.0" style="-fx-background-color: #FE633D; -fx-background-radius: 5;" text="Login" textAlignment="CENTER" textFill="WHITE">
+      <Label layoutX="403.0" layoutY="375.0" text="Email address" textFill="#202046" />
+      <JFXTextField fx:id="txtEmail" layoutX="403.0" layoutY="392.0" prefHeight="25.0" prefWidth="260.0" />
+      <Label layoutX="403.0" layoutY="434.0" text="Password" textFill="#202046" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="403.0" layoutY="451.0" prefHeight="25.0" prefWidth="260.0" />
+      <Label fx:id="lblForget" layoutX="574.0" layoutY="493.0" text="Forgot password" textFill="#3886ce" />
+      <JFXButton buttonType="RAISED" layoutX="403.0" layoutY="534.0" onAction="#LoginButtonOnAction" prefHeight="39.0" prefWidth="260.0" style="-fx-background-color: #FE633D; -fx-background-radius: 5;" text="Login" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </JFXButton>
-      <Label fx:id="lblnvalidEmail" layoutX="606.0" layoutY="399.0" textFill="RED" />
-      <Label fx:id="lblInvalidPassword" layoutX="606.0" layoutY="458.0" textFill="RED" />
    </children>
 </AnchorPane>

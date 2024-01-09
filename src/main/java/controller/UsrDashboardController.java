@@ -9,28 +9,19 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class AdminDashboardController {
+public class UsrDashboardController {
 
     @FXML
-    private AnchorPane adminDashboardPane;
+    private AnchorPane userDashboardPane;
 
     @FXML
     void inventoryButtonOnAction(ActionEvent event) {
-        Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
-        try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Inventory.fxml"))));
-            stage.centerOnScreen();
-            stage.setResizable(false);
-            stage.setTitle("Inventory");
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
     }
 
     @FXML
     void itemCatalogButtonOnAction(ActionEvent event) {
-        Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
+        Stage stage = (Stage) userDashboardPane.getScene().getWindow();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ItemCatalog.fxml"))));
             stage.centerOnScreen();
@@ -44,7 +35,7 @@ public class AdminDashboardController {
 
     @FXML
     void logoutButtonOnAction(ActionEvent event) {
-        Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
+        Stage stage = (Stage) userDashboardPane.getScene().getWindow();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Login.fxml"))));
             stage.centerOnScreen();
@@ -58,7 +49,7 @@ public class AdminDashboardController {
 
     @FXML
     void orderPlacementButtonOnAction(ActionEvent event) {
-        Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
+        Stage stage = (Stage) userDashboardPane.getScene().getWindow();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/OrderProcessing.fxml"))));
             stage.centerOnScreen();
@@ -72,7 +63,7 @@ public class AdminDashboardController {
 
     @FXML
     void orderProcessingButtonOnAction(ActionEvent event) {
-        Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
+        Stage stage = (Stage) userDashboardPane.getScene().getWindow();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/OrderPlacement.fxml"))));
             stage.centerOnScreen();
@@ -86,11 +77,6 @@ public class AdminDashboardController {
 
     @FXML
     void reportsButtonOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void userManagementButtonOnAction(ActionEvent event) {
 
     }
 

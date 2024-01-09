@@ -4,25 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Created the Login view and developed/modified the LoginController.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AdminDashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Admin Dashboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/User Management.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e--e-service-center-favicon-color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e--e-service-center-high-resolution-logo-white-transparent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/logo-black trans.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/AdminDashboard.fxml" afterDir="false" />
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Created the Admin Dashboard view and developed/modified the AdminDashboardController.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/InventoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ItemCatalogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrderPlacementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrderProcessingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/UsrDashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Inventory.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/ItemCatalog.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/OrderPlacement.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/OrderProcessing.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/UserDashboard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AdminDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AdminDashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/AdminDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/AdminDashboard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,28 +61,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_directory_selection": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/java",
-    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade (with Layered Architecture)",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/java/edu/icet/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/resources/view&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/java/edu/icet/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ICM104\9. Standalone Application Development\WORKING\EE_Service_Center_App\src\main\resources\view" />
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\EE_Service_Center_App\src\main\resources\images" />
     </key>
   </component>
@@ -146,7 +155,9 @@
       <updated>1704529630426</updated>
       <workItem from="1704529631566" duration="88000" />
       <workItem from="1704529868461" duration="3188000" />
-      <workItem from="1704548845539" duration="7942000" />
+      <workItem from="1704548845539" duration="9619000" />
+      <workItem from="1704654227913" duration="17000" />
+      <workItem from="1704706591549" duration="16865000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -172,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704549432129</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created the Admin Dashboard view and developed/modified the AdminDashboardController.">
+      <option name="closed" value="true" />
+      <created>1704560103514</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704560103514</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +201,7 @@
     <MESSAGE value="Added dependencies." />
     <MESSAGE value="Added plugins." />
     <MESSAGE value="Created the Login view and developed/modified the LoginController." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the Login view and developed/modified the LoginController." />
+    <MESSAGE value="Created the Admin Dashboard view and developed/modified the AdminDashboardController." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the Admin Dashboard view and developed/modified the AdminDashboardController." />
   </component>
 </project>
