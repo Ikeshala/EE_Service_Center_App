@@ -11,25 +11,47 @@
 
 <AnchorPane fx:id="loginPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
-      <ImageView fitHeight="600.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/back-electro.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="296.0" fitWidth="448.0" layoutX="321.0" layoutY="14.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="296.0" fitWidth="448.0" layoutX="341.0" layoutY="14.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/logo-no-background.png" />
          </image>
       </ImageView>
-      <Label layoutX="403.0" layoutY="375.0" text="Email address" textFill="#202046" />
-      <JFXTextField fx:id="txtEmail" layoutX="403.0" layoutY="392.0" prefHeight="25.0" prefWidth="260.0" />
-      <Label layoutX="403.0" layoutY="434.0" text="Password" textFill="#202046" />
-      <JFXPasswordField fx:id="txtPassword" layoutX="403.0" layoutY="451.0" prefHeight="25.0" prefWidth="260.0" />
-      <Label fx:id="lblForget" layoutX="574.0" layoutY="493.0" text="Forgot password" textFill="#3886ce" />
-      <JFXButton buttonType="RAISED" layoutX="403.0" layoutY="534.0" onAction="#LoginButtonOnAction" prefHeight="39.0" prefWidth="260.0" style="-fx-background-color: #FE633D; -fx-background-radius: 5;" text="Login" textAlignment="CENTER" textFill="WHITE">
+      <Label layoutX="423.0" layoutY="374.0" text="Email address" textFill="#202046" />
+      <JFXTextField fx:id="txtEmail" layoutX="423.0" layoutY="391.0" prefHeight="25.0" prefWidth="260.0" />
+      <Label layoutX="423.0" layoutY="433.0" text="Password" textFill="#202046" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="423.0" layoutY="450.0" prefHeight="25.0" prefWidth="260.0" />
+      <Label fx:id="lblForget" layoutX="594.0" layoutY="492.0" text="Forgot password" textFill="#3886ce" />
+      <JFXButton buttonType="RAISED" layoutX="423.0" layoutY="533.0" onAction="#LoginButtonOnAction" prefHeight="39.0" prefWidth="260.0" style="-fx-background-color: #FE633D; -fx-background-radius: 5;" text="Login" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </JFXButton>
+      <AnchorPane prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: #FE633D;">
+         <children>
+            <Label layoutX="88.0" layoutY="54.0" text="User Login" textAlignment="CENTER" textFill="#202046">
+               <font>
+                  <Font name="Gill Sans MT Ext Condensed Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="109.0" text="Embark on a Journey," textFill="#fffdfd" />
+            <Label layoutX="15.0" layoutY="126.0" text="Log in to Explore the Realm of E &amp; E Marvels!" textFill="WHITE" />
+            <ImageView fitHeight="360.0" fitWidth="200.0" layoutX="36.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sticker-design-with-auto-mechanic-cartoon-character_1308-63794.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="41.0" layoutY="543.0" text="Powering Precision, Reviving Reliability," textFill="#fffdfd">
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="560.0" text="Your Trusted Electronic &amp; Electric Repair Partner!" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="270.0" prefHeight="600.0" prefWidth="33.0" style="-fx-background-color: #202046;" />
    </children>
 </AnchorPane>
