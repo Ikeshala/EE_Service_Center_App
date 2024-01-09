@@ -86,7 +86,16 @@ public class AdminDashboardController {
 
     @FXML
     void reportsButtonOnAction(ActionEvent event) {
-
+        Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Reports.fxml"))));
+            stage.centerOnScreen();
+            stage.setResizable(false);
+            stage.setTitle("Reports");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="reportsPane" accessibleRole="IMAGE_VIEW" cacheShape="false" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: #FE633D;">
+         <children>
+            <Label layoutX="99.0" layoutY="300.0" text="Reports" textAlignment="CENTER" textFill="#202046">
+               <font>
+                  <Font name="Gill Sans MT Ext Condensed Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="348.0" text="Explore Reports," textFill="#fffdfd" />
+            <Label layoutX="17.0" layoutY="365.0" text="Window to Comprehensive Data &amp; Insights!" textFill="WHITE" />
+            <ImageView fitHeight="180.0" fitWidth="254.0" layoutX="41.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/e--e-service-center-high-resolution-logo-white-transparent.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="78.0" layoutY="524.0" onAction="#logoutButtonOnAction" text="Logout" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="268.0" prefHeight="600.0" prefWidth="33.0" style="-fx-background-color: #202046;" />
+      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" onAction="#backButtonOnAction" prefHeight="35.0" prefWidth="35.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_10.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="S_RESIZE" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="331.0" layoutY="36.0" prefHeight="151.0" prefWidth="169.0" ripplerFill="#e5e1da" text="Order Reports" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="99.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_17.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#202046" />
+                  <Stop color="#3886ce" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="BOTTOM" layoutX="331.0" layoutY="226.0" prefHeight="151.0" prefWidth="169.0" ripplerFill="#e5e1da" text="Customer Reports" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="99.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_20.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#202046" />
+                  <Stop color="#3886ce" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="BOTTOM" layoutX="331.0" layoutY="415.0" prefHeight="151.0" prefWidth="169.0" ripplerFill="#e3e0da" text="Sales Reports" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="99.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_19.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#202046" />
+                  <Stop color="#3886ce" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="568.0" layoutY="75.0" onAction="#orderDetailsButtonOnAction" prefHeight="50.0" prefWidth="193.0" text="Order Details">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_23.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#202046" />
+                  <Stop color="#3886ce" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <ripplerFill>
+            <RadialGradient centerX="0.55" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f8c314" />
+                  <Stop color="#f8c314" offset="0.007662835249042145" />
+                  <Stop color="#f47b11" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="568.0" layoutY="126.0" onAction="#customerOrdersButtonOnAction" prefHeight="50.0" prefWidth="193.0" text="Customer Orders" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_23.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#202046" />
+                  <Stop color="#3886ce" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <ripplerFill>
+            <RadialGradient centerX="0.55" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f8c314" />
+                  <Stop color="#f8c314" offset="0.007662835249042145" />
+                  <Stop color="#f47b11" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Line endX="7.0" endY="-126.0" layoutX="568.0" layoutY="225.0" startX="-91.0" startY="-126.0" />
+      <Line endX="7.0" endY="-126.0" layoutX="568.0" layoutY="277.0" startX="-91.0" startY="-126.0" />
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="568.0" layoutY="418.0" onAction="#dailySalesButtonOnAction" prefHeight="50.0" prefWidth="193.0" text="Daily Sales">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_23.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#202046" />
+                  <Stop color="#3886ce" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <ripplerFill>
+            <RadialGradient centerX="0.55" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f8c314" />
+                  <Stop color="#f8c314" offset="0.007662835249042145" />
+                  <Stop color="#f47b11" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="568.0" layoutY="471.0" onAction="#monthlySalesButtonOnAction" prefHeight="50.0" prefWidth="193.0" text="Monthly Sales" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_23.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#202046" />
+                  <Stop color="#3886ce" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <ripplerFill>
+            <RadialGradient centerX="0.55" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f8c314" />
+                  <Stop color="#f8c314" offset="0.007662835249042145" />
+                  <Stop color="#f47b11" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Line endX="7.0" endY="-126.0" layoutX="568.0" layoutY="569.0" startX="-91.0" startY="-126.0" />
+      <Line endX="7.0" endY="-126.0" layoutX="568.0" layoutY="622.0" startX="-91.0" startY="-126.0" />
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="568.0" layoutY="524.0" onAction="#annualSalesButtonOnAction" prefHeight="50.0" prefWidth="193.0" text="Annual Sales" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_23.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#202046" />
+                  <Stop color="#3886ce" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <ripplerFill>
+            <RadialGradient centerX="0.55" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f8c314" />
+                  <Stop color="#f8c314" offset="0.007662835249042145" />
+                  <Stop color="#f47b11" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Line endX="7.0" endY="-126.0" layoutX="568.0" layoutY="675.0" startX="-91.0" startY="-126.0" />
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="568.0" layoutY="286.0" onAction="#customerDetailsButtonOnAction" prefHeight="50.0" prefWidth="193.0" text="Customer Details" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_23.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#202046" />
+                  <Stop color="#3886ce" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <ripplerFill>
+            <RadialGradient centerX="0.55" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f8c314" />
+                  <Stop color="#f8c314" offset="0.007662835249042145" />
+                  <Stop color="#f47b11" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Line endX="7.0" endY="-126.0" layoutX="568.0" layoutY="437.0" startX="-91.0" startY="-126.0" />
+   </children>
+</AnchorPane>
