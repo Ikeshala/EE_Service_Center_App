@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="inventoryPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InventoryController">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: #FE633D;">
+         <children>
+            <Label layoutX="90.0" layoutY="300.0" text="Inventory" textAlignment="CENTER" textFill="#202046">
+               <font>
+                  <Font name="Gill Sans MT Ext Condensed Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="348.0" text="Discover the Magic in nventories..." textFill="#fffdfd" />
+            <Label layoutX="19.0" layoutY="365.0" text="Explore a World of Electronics &amp; Electricals!" textFill="WHITE" />
+            <ImageView fitHeight="180.0" fitWidth="254.0" layoutX="41.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/e--e-service-center-high-resolution-logo-white-transparent.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="78.0" layoutY="524.0" onAction="#logoutButtonOnAction" text="Logout" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="268.0" prefHeight="600.0" prefWidth="33.0" style="-fx-background-color: #202046;" />
+      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="2.0" onAction="#backButtonOnAction" prefHeight="35.0" prefWidth="35.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_10.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="S_RESIZE" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXTreeTableView fx:id="tblItem" layoutX="307.0" layoutY="7.0" prefHeight="532.0" prefWidth="487.0" style="-fx-background-color: #E5E1DA;">
+         <columns>
+            <TreeTableColumn fx:id="colCode" prefWidth="90.0" text="Code" />
+            <TreeTableColumn fx:id="colItemName" prefWidth="157.0" text="Item Name" />
+            <TreeTableColumn fx:id="colQuantity" prefWidth="58.0" text="QTY" />
+            <TreeTableColumn fx:id="colAction" prefWidth="168.0" text="Action" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXButton buttonType="RAISED" layoutX="337.0" layoutY="555.0" text=" Red Zone">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/4.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="438.0" layoutY="555.0" text="Orange Zone">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/3.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="553.0" layoutY="555.0" text="Yellow Zone">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/2.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="663.0" layoutY="555.0" text="Green Zone">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/1.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
