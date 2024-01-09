@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registrationPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserRegistrationController">
+   <children>
+      <ImageView fitHeight="296.0" fitWidth="448.0" layoutX="341.0" layoutY="11.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo-no-background.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="423.0" layoutY="339.0" text="User Name" textFill="#202046" />
+      <JFXPasswordField fx:id="txtUserName" layoutX="423.0" layoutY="356.0" prefHeight="25.0" prefWidth="260.0" />
+      <Label layoutX="423.0" layoutY="398.0" text="Email address" textFill="#202046" />
+      <JFXTextField fx:id="txtEmail" layoutX="423.0" layoutY="415.0" prefHeight="25.0" prefWidth="260.0" />
+      <Label layoutX="423.0" layoutY="457.0" text="Password" textFill="#202046" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="423.0" layoutY="474.0" prefHeight="25.0" prefWidth="260.0" />
+      <JFXButton buttonType="RAISED" layoutX="423.0" layoutY="546.0" onAction="#registerUserButtonOnAction" prefHeight="39.0" prefWidth="260.0" style="-fx-background-color: #FE633D; -fx-background-radius: 5;" text="Register User" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: #FE633D;">
+         <children>
+            <Label layoutX="55.0" layoutY="59.0" text="User Registration" textAlignment="CENTER" textFill="#202046">
+               <font>
+                  <Font name="Gill Sans MT Ext Condensed Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="116.0" text="Unlock the Portal," textFill="#fffdfd" />
+            <Label layoutX="10.0" layoutY="133.0" text="Dive into E &amp; E Universe with User Registration!" textFill="WHITE" />
+            <JFXButton layoutX="78.0" layoutY="524.0" onAction="#logoutButtonOnAction" text="Logout" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="296.0" fitWidth="200.0" layoutX="35.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/eeeee.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#backButtonOnAction" prefHeight="35.0" prefWidth="35.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_10.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="S_RESIZE" />
+                     </cursor>
+                     <effect>
+                        <Blend mode="COLOR_BURN" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="270.0" prefHeight="600.0" prefWidth="33.0" style="-fx-background-color: #202046;" />
+      <JFXRadioButton fx:id="radAdmin" layoutX="509.0" layoutY="512.0" text="Admin" />
+      <JFXRadioButton fx:id="radEmployee" layoutX="586.0" layoutY="512.0" prefHeight="17.0" prefWidth="86.0" text="Employee" />
+   </children>
+</AnchorPane>
