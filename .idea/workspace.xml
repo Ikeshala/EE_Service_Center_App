@@ -4,34 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Created the Admin Dashboard view and developed/modified the AdminDashboardController.">
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Created the User Dashboard view, and developed/modified the UserDashboardController.">
       <change afterPath="$PROJECT_DIR$/src/main/java/controller/InventoryController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/controller/ItemCatalogController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrderPlacementController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrderProcessingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/UsrDashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_9.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/view/Inventory.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/view/ItemCatalog.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/view/OrderPlacement.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/view/OrderProcessing.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/UserDashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AdminDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AdminDashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/AdminDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/AdminDashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +139,7 @@
       <workItem from="1704548845539" duration="9619000" />
       <workItem from="1704654227913" duration="17000" />
       <workItem from="1704706591549" duration="16865000" />
+      <workItem from="1704775259486" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -191,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704560103514</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created the User Dashboard view, and developed/modified the UserDashboardController.">
+      <option name="closed" value="true" />
+      <created>1704775483555</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704775483555</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +192,7 @@
     <MESSAGE value="Added plugins." />
     <MESSAGE value="Created the Login view and developed/modified the LoginController." />
     <MESSAGE value="Created the Admin Dashboard view and developed/modified the AdminDashboardController." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the Admin Dashboard view and developed/modified the AdminDashboardController." />
+    <MESSAGE value="Created the User Dashboard view, and developed/modified the UserDashboardController." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the User Dashboard view, and developed/modified the UserDashboardController." />
   </component>
 </project>
