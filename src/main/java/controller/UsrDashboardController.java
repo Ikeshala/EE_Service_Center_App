@@ -49,23 +49,14 @@ public class UsrDashboardController {
 
     @FXML
     void orderPlacementButtonOnAction(ActionEvent event) {
-        Stage stage = (Stage) userDashboardPane.getScene().getWindow();
-        try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/OrderProcessing.fxml"))));
-            stage.centerOnScreen();
-            stage.setResizable(false);
-            stage.setTitle("Order Placement");
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
     }
 
     @FXML
     void orderProcessingButtonOnAction(ActionEvent event) {
         Stage stage = (Stage) userDashboardPane.getScene().getWindow();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/OrderPlacement.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/OrderProcessing.fxml"))));
             stage.centerOnScreen();
             stage.setResizable(false);
             stage.setTitle("Order Processing");

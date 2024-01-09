@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Created the User Dashboard view, and developed/modified the UserDashboardController.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/InventoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ItemCatalogController.java" afterDir="false" />
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Created the Inventory view, and developed/modified the InventoryController.">
       <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrderPlacementController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrderProcessingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Inventory.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/ItemCatalog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/OrderPlacement.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/view/OrderProcessing.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AdminDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AdminDashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UsrDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UsrDashboardController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +137,7 @@
       <workItem from="1704548845539" duration="9619000" />
       <workItem from="1704654227913" duration="17000" />
       <workItem from="1704706591549" duration="16865000" />
-      <workItem from="1704775259486" duration="312000" />
+      <workItem from="1704775259486" duration="1247000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -181,7 +179,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704775483555</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Created the Item Catalog view, and developed/modified the ItemCatalogController.">
+      <option name="closed" value="true" />
+      <created>1704775644507</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704775644507</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created the Inventory view, and developed/modified the InventoryController.">
+      <option name="closed" value="true" />
+      <created>1704775720192</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704775720192</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +207,8 @@
     <MESSAGE value="Created the Login view and developed/modified the LoginController." />
     <MESSAGE value="Created the Admin Dashboard view and developed/modified the AdminDashboardController." />
     <MESSAGE value="Created the User Dashboard view, and developed/modified the UserDashboardController." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the User Dashboard view, and developed/modified the UserDashboardController." />
+    <MESSAGE value="Created the Item Catalog view, and developed/modified the ItemCatalogController." />
+    <MESSAGE value="Created the Inventory view, and developed/modified the InventoryController." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the Inventory view, and developed/modified the InventoryController." />
   </component>
 </project>
