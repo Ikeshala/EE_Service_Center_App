@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Created the User Registration view, and developed/modified the UserRegistrationController.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ReportsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Reports.fxml" afterDir="false" />
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Created the Reports view, and developed/modified the ReportsController.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AdminDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AdminDashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UsrDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UsrDashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_17.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/img_17.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +43,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_directory_selection": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/java",
-    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/resources/view",
+    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/POS-GimaFashion-Layered_Architecture-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -142,7 +132,8 @@
       <workItem from="1704548845539" duration="9619000" />
       <workItem from="1704654227913" duration="17000" />
       <workItem from="1704706591549" duration="16865000" />
-      <workItem from="1704775259486" duration="16231000" />
+      <workItem from="1704775259486" duration="16998000" />
+      <workItem from="1705057556643" duration="479000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -232,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704793092115</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Created the Reports view, and developed/modified the ReportsController.">
+      <option name="closed" value="true" />
+      <created>1704799714790</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704799714790</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +249,7 @@
     <MESSAGE value="Created the Order Placement view, and developed/modified the OrderPlacementController." />
     <MESSAGE value="Created the User Management view, and developed/modified the UserManagementController." />
     <MESSAGE value="Created the User Registration view, and developed/modified the UserRegistrationController." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the User Registration view, and developed/modified the UserRegistrationController." />
+    <MESSAGE value="Created the Reports view, and developed/modified the ReportsController." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the Reports view, and developed/modified the ReportsController." />
   </component>
 </project>
