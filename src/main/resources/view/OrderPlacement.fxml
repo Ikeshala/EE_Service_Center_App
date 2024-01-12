@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="orderPlacementPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderPlacementController">
+<AnchorPane fx:id="orderPlacementPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.OrderPlacementController">
    <children>
       <AnchorPane layoutX="-2.0" prefHeight="600.0" prefWidth="315.0" style="-fx-background-color: #FE633D;">
          <children>

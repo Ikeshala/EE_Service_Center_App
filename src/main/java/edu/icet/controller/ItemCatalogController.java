@@ -1,4 +1,4 @@
-package controller;
+package edu.icet.controller;
 
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextArea;

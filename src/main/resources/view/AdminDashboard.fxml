@@ -10,7 +10,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="adminDashboardPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashboardController">
+<AnchorPane fx:id="adminDashboardPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.AdminDashboardController">
    <children>
       <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="341.0" layoutY="35.0" onAction="#userManagementButtonOnAction" prefHeight="151.0" prefWidth="169.0" text="User Management" textAlignment="CENTER">
          <graphic>
