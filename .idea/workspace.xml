@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Implemented DBConnection using the singleton design pattern.">
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Implemented User and UserType Entities.">
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/UserBo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/impl/UserBoImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/CrudDao.java" afterDir="false" />
@@ -14,13 +14,8 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/CrudUtil.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/UserDto.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/tm/UserTm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/UserType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/65c4d77e-8698-4cd3-b1b9-b71e3f8e6478.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/65c4d77e-8698-4cd3-b1b9-b71e3f8e6478.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/hibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/hibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/UserRegistration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/UserRegistration.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +154,7 @@
       <workItem from="1705339404988" duration="98000" />
       <workItem from="1705492709528" duration="268000" />
       <workItem from="1705587916720" duration="4000" />
-      <workItem from="1705826587733" duration="2845000" />
+      <workItem from="1705826587733" duration="3243000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -281,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705064496974</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Implemented User and UserType Entities.">
+      <option name="closed" value="true" />
+      <created>1705829816184</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1705829816185</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +306,7 @@
     <MESSAGE value="Integrated Hibernate dependency." />
     <MESSAGE value="Configured Hibernate settings." />
     <MESSAGE value="Implemented DBConnection using the singleton design pattern." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented DBConnection using the singleton design pattern." />
+    <MESSAGE value="Implemented User and UserType Entities." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented User and UserType Entities." />
   </component>
 </project>
