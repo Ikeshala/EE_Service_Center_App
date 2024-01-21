@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Created the Reports view, and developed/modified the ReportsController.">
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Implemented DBConnection using the singleton design pattern.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/UserBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/impl/UserBoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/CrudDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/SuperDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/CrudUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/tm/UserTm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/65c4d77e-8698-4cd3-b1b9-b71e3f8e6478.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/65c4d77e-8698-4cd3-b1b9-b71e3f8e6478.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/hibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/hibernateUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +32,7 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -43,16 +59,21 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_directory_selection": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/java",
-    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/POS-GimaFashion-Layered_Architecture-master",
+    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade (with Layered Architecture)",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "onboarding.tips.debug.path": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/java/edu/icet/Main.java",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -133,7 +154,12 @@
       <workItem from="1704654227913" duration="17000" />
       <workItem from="1704706591549" duration="16865000" />
       <workItem from="1704775259486" duration="16998000" />
-      <workItem from="1705057556643" duration="479000" />
+      <workItem from="1705057556643" duration="10748000" />
+      <workItem from="1705331592604" duration="691000" />
+      <workItem from="1705339404988" duration="98000" />
+      <workItem from="1705492709528" duration="268000" />
+      <workItem from="1705587916720" duration="4000" />
+      <workItem from="1705826587733" duration="2845000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -231,7 +257,31 @@
       <option name="project" value="LOCAL" />
       <updated>1704799714790</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Integrated Hibernate dependency.">
+      <option name="closed" value="true" />
+      <created>1705060241622</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705060241622</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Configured Hibernate settings.">
+      <option name="closed" value="true" />
+      <created>1705061426449</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705061426449</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Implemented DBConnection using the singleton design pattern.">
+      <option name="closed" value="true" />
+      <created>1705064496974</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1705064496974</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +300,9 @@
     <MESSAGE value="Created the User Management view, and developed/modified the UserManagementController." />
     <MESSAGE value="Created the User Registration view, and developed/modified the UserRegistrationController." />
     <MESSAGE value="Created the Reports view, and developed/modified the ReportsController." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the Reports view, and developed/modified the ReportsController." />
+    <MESSAGE value="Integrated Hibernate dependency." />
+    <MESSAGE value="Configured Hibernate settings." />
+    <MESSAGE value="Implemented DBConnection using the singleton design pattern." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented DBConnection using the singleton design pattern." />
   </component>
 </project>
