@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Implemented User and UserType Entities.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/UserBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/impl/UserBoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/CrudDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/SuperDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/CrudUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/tm/UserTm.java" afterDir="false" />
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Implemented UserBo and UserBoImpl.">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/UserRegistration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/UserRegistration.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +144,7 @@
       <workItem from="1705339404988" duration="98000" />
       <workItem from="1705492709528" duration="268000" />
       <workItem from="1705587916720" duration="4000" />
-      <workItem from="1705826587733" duration="3243000" />
+      <workItem from="1705826587733" duration="3626000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -284,7 +274,63 @@
       <option name="project" value="LOCAL" />
       <updated>1705829816185</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Implemented UserDto">
+      <option name="closed" value="true" />
+      <created>1705829885833</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1705829885833</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Implemented UserTm">
+      <option name="closed" value="true" />
+      <created>1705829943449</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1705829943449</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Implemented CrudUtil">
+      <option name="closed" value="true" />
+      <created>1705829999707</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1705829999707</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Implemented SuperDao">
+      <option name="closed" value="true" />
+      <created>1705830035646</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1705830035646</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Implemented CrudDao">
+      <option name="closed" value="true" />
+      <created>1705830078721</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1705830078721</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Implemented UserDao and UserDaoImpl.">
+      <option name="closed" value="true" />
+      <created>1705830155625</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1705830155625</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Implemented UserBo and UserBoImpl.">
+      <option name="closed" value="true" />
+      <created>1705830200931</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1705830200931</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +353,13 @@
     <MESSAGE value="Configured Hibernate settings." />
     <MESSAGE value="Implemented DBConnection using the singleton design pattern." />
     <MESSAGE value="Implemented User and UserType Entities." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented User and UserType Entities." />
+    <MESSAGE value="Implemented UserDto" />
+    <MESSAGE value="Implemented UserTm" />
+    <MESSAGE value="Implemented CrudUtil" />
+    <MESSAGE value="Implemented SuperDao" />
+    <MESSAGE value="Implemented CrudDao" />
+    <MESSAGE value="Implemented UserDao and UserDaoImpl." />
+    <MESSAGE value="Implemented UserBo and UserBoImpl." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented UserBo and UserBoImpl." />
   </component>
 </project>
