@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="IAdded dependencies.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/SuperBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/UserBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b4b7421e-6f69-4858-85e2-627cf3ca91b4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b4b7421e-6f69-4858-85e2-627cf3ca91b4.xml" afterDir="false" />
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Fully implemented user login functionality.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/ForgetPasswordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/forget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/ForgetPassword.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/bo/UserBo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/bo/impl/UserBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/impl/UserBoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/UserRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/UserRegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/hibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +20,8 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,7 +47,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_directory_selection": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/java",
-    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App",
+    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/resources/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,8 +66,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ICM104\9. Standalone Application Development\WORKING\EE_Service_Center_App\src\main\resources\view" />
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\EE_Service_Center_App\src\main\resources\images" />
+      <recent name="D:\ICM104\9. Standalone Application Development\WORKING\EE_Service_Center_App\src\main\resources\view" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.EE_Service_Center_App [javafx:run]">
@@ -159,7 +148,7 @@
       <workItem from="1705492709528" duration="268000" />
       <workItem from="1705587916720" duration="4000" />
       <workItem from="1705826587733" duration="5031000" />
-      <workItem from="1706864413118" duration="3220000" />
+      <workItem from="1706864413118" duration="5233000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -353,7 +342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705830306214</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Fully implemented user login functionality.">
+      <option name="closed" value="true" />
+      <created>1706867898600</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1706867898600</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +381,7 @@
     <MESSAGE value="Implemented UserDao and UserDaoImpl." />
     <MESSAGE value="Implemented UserBo and UserBoImpl." />
     <MESSAGE value="IAdded dependencies." />
-    <option name="LAST_COMMIT_MESSAGE" value="IAdded dependencies." />
+    <MESSAGE value="Fully implemented user login functionality." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fully implemented user login functionality." />
   </component>
 </project>
