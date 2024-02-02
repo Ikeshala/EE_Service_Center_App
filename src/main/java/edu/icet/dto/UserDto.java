@@ -6,18 +6,13 @@ import lombok.*;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 
-@ToString
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class UserDto {
-    private Long id;
-    private String name;
     private String email;
     private String password;
-
-    @Enumerated(EnumType.STRING)
-    private UserType type;
+    private String type;
 }
 

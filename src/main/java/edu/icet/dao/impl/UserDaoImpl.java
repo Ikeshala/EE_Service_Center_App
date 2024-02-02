@@ -1,29 +1,19 @@
 package edu.icet.dao.impl;
 
 import edu.icet.dao.UserDao;
-import edu.icet.dao.util.CrudUtil;
+import edu.icet.dao.util.HibernateUtil;
+import edu.icet.dto.UserDto;
 import edu.icet.entity.User;
+import org.hibernate.Session;
+import org.hibernate.query.Query;
 
 import java.sql.SQLException;
 import java.util.List;
 
 public class UserDaoImpl implements UserDao {
-    boolean searchUser(String id) {
-        return false;
-    }
-
     @Override
     public boolean save(User entity) throws SQLException, ClassNotFoundException {
-        String sql = "INSERT INTO user VALUES(?,?,?,?,?)";
-
-        return CrudUtil.execute(
-                sql,
-                entity.getId(),
-                entity.getName(),
-                entity.getEmail(),
-                entity.getType(),
-                entity.getPassword()
-        );
+        return false;
     }
 
     @Override
@@ -42,7 +32,23 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public User authenticateUser(String email, String password) {
+    public UserDto getUser(String email) {
+        try (Session session = HibernateUtil.getSession()) {
+            Query<User> query = session.createQuery("FROM User WHERE email = :email", User.class);
+            query.setParameter("email", email);
+
+            User user = query.uniqueResult();
+
+            if (user != null) {
+                return new UserDto(
+                        user.getEmail(),
+                        user.getPassword(),
+                        user.getType()
+                );
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return null;
     }
 }

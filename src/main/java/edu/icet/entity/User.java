@@ -1,20 +1,23 @@
 package edu.icet.entity;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
-@Table(name = "users")
+@ToString
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String name;
     private String email;
     private String password;
+    private String type;
 
-    @Enumerated(EnumType.STRING)
-    private UserType type;
+    public User(String email, String password, String type) {
+        this.email = email;
+        this.password = password;
+        this.type = type;
+    }
 }

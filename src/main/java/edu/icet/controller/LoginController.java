@@ -1,23 +1,22 @@
 package edu.icet.controller;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXRadioButton;
 import com.jfoenix.controls.JFXTextField;
-import edu.icet.bo.UserBo;
-import edu.icet.bo.impl.UserBoImpl;
-import edu.icet.entity.User;
-import edu.icet.entity.UserType;
+import edu.icet.bo.custom.UserBo;
+import edu.icet.bo.custom.impl.UserBoImpl;
+import edu.icet.dto.UserDto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import edu.icet.bo.UserBo;
-import edu.icet.entity.UserType;
+import java.sql.SQLException;
 
 
 public class LoginController {
@@ -25,43 +24,84 @@ public class LoginController {
     public AnchorPane loginPane;
     @FXML
     private JFXTextField txtEmail;
-
+    public JFXRadioButton radAdmin;
+    public JFXRadioButton radEmployee;
     @FXML
     private JFXPasswordField txtPassword;
-
     @FXML
-    private Label lblForget;
+    private JFXButton btnForgetPassword;
+
+    UserBo userBo=new UserBoImpl();
 
     @FXML
     void LoginButtonOnAction(ActionEvent event) {
-        Stage stage = (Stage) loginPane.getScene().getWindow();
-        try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AdminDashboard.fxml"))));
-            stage.centerOnScreen();
-            stage.setResizable(false);
-            stage.setTitle("Admin Dashboard");
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
+        if (radEmployee.isSelected()) {
+            try {
+                String enteredEmail = txtEmail.getText().toString();
+                String enteredPassword = txtPassword.getText().toString();
+
+                UserDto userDto = userBo.getUser(enteredEmail);
+
+                if (userDto != null && userDto.getPassword().equals(enteredPassword) && userDto.getType().equals("User") ) {
+                    Stage stage=(Stage) radEmployee.getScene().getWindow();
+                    try {
+                        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/UserDashboard.fxml"))));
+                        stage.setTitle("User");
+                        stage.show();
+                        stage.setResizable(true);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                } else {
+                    new Alert(Alert.AlertType.ERROR, "Incorrect Email or Password!").show();
+                }
+            } catch (RuntimeException e) {
+
+                e.printStackTrace();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        } else if(radAdmin.isSelected()){
+            String enteredEmail = txtEmail.getText().toString();
+            String enteredPassword = txtPassword.getText().toString();
+
+            try {
+                UserDto userDto = userBo.getUser(enteredEmail);
+                if (userDto != null && userDto.getPassword().equals(enteredPassword) && userDto.getType().equals("Admin")) {
+                    Stage stage=(Stage) radAdmin.getScene().getWindow();
+                    try {
+                        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AdminDashboard.fxml"))));
+                        stage.setTitle("Admin");
+                        stage.show();
+                        stage.setResizable(true);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                } else {
+                    new Alert(Alert.AlertType.ERROR, "Incorrect Email or Password").show();
+                }
+
+
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
-    private void openDashboard(UserBo userBo) {
-//        Stage stage = (Stage) loginPane.getScene().getWindow();
-//        try {
-//            UserType userType = userBo.getType();
-//            String dashboardPath = (userType == UserType.ADMIN) ? "/view/AdminDashboard.fxml" : "/view/UserDashboard.fxml";
-//            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource(dashboardPath))));
-//            stage.centerOnScreen();
-//            stage.setResizable(false);
-//            stage.setTitle((userType == UserType.ADMIN) ? "Admin Dashboard" : "User Dashboard");
-//            stage.show();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-    }
-    private void clearFields() {
-        txtEmail.clear();
-        txtPassword.clear();
+    @FXML
+    void forgotPasswordButtonOnAction(ActionEvent event) {
+        Stage stage=(Stage) btnForgetPassword.getScene().getWindow();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ForgotPassword.fxml"))));
+            stage.show();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

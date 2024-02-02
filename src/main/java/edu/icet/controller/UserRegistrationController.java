@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -27,6 +28,8 @@ public class UserRegistrationController {
 
     @FXML
     private JFXPasswordField txtUserName;
+
+
 
     @FXML
     void backButtonOnAction(ActionEvent event) {
@@ -58,6 +61,11 @@ public class UserRegistrationController {
 
     @FXML
     void registerUserButtonOnAction(ActionEvent event) {
+        if (txtUserName.getText().isEmpty() || txtEmail.getText().isEmpty() ||
+                txtPassword.getText().isEmpty() || radAdmin.getText().isEmpty() || radEmployee.getText().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR, "Please fill in all fields!").show();
+            return;
+        }
 
     }
 
