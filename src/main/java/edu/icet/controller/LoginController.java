@@ -98,7 +98,7 @@ public class LoginController {
     void forgotPasswordButtonOnAction(ActionEvent event) {
         Stage stage=(Stage) btnForgetPassword.getScene().getWindow();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ForgotPassword.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ForgetPassword.fxml"))));
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);
