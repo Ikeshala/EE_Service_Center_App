@@ -1,41 +1,60 @@
 package edu.icet.bo.custom.impl;
 
 import edu.icet.bo.custom.UserBo;
-import edu.icet.dao.UserDao;
-import edu.icet.dao.impl.UserDaoImpl;
+import edu.icet.dao.DaoFactory;
+import edu.icet.dao.custom.UserDao;
+import edu.icet.dao.util.DaoType;
 import edu.icet.dto.UserDto;
 import edu.icet.entity.User;
-import edu.icet.entity.UserType;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserBoImpl implements UserBo {
-    UserDao userDao=new UserDaoImpl();
-
+    private UserDao userDao = DaoFactory.getInstance().getDao(DaoType.USER);
     @Override
-    public Boolean saveUser(UserDto dto) throws SQLException, ClassNotFoundException {
-        return null;
+    public boolean saveUser(UserDto dto) throws SQLException, ClassNotFoundException {
+        return userDao.save(new User(
+                dto.getUserId(),
+                dto.getEmail(),
+                dto.getPassword(),
+                dto.getType()
+        ));
     }
 
     @Override
     public boolean updateUser(UserDto dto) throws SQLException, ClassNotFoundException {
-        return false;
+        return userDao.update(new User(
+                dto.getUserId(),
+                dto.getEmail(),
+                dto.getPassword(),
+                dto.getType()
+        ));
     }
 
     @Override
     public boolean deleteUser(String id) throws SQLException, ClassNotFoundException {
+        return userDao.delete(id);
+    }
+
+    @Override
+    public boolean searchUser(UserDto dto) {
         return false;
     }
 
     @Override
-    public List<UserDto> allUsers() throws SQLException, ClassNotFoundException {
-        return null;
-    }
-
-    @Override
-    public UserDto getUser(String email) throws SQLException, ClassNotFoundException {
-
-        return userDao.getUser(email);
+    public List<UserDto> allUser() throws SQLException, ClassNotFoundException {
+        List<User> entityList = userDao.getAll();
+        List<UserDto> list = new ArrayList<>();
+        for (User user:entityList) {
+            list.add(new UserDto(
+                    user.getUserId(),
+                    user.getEmail(),
+                    user.getPassword(),
+                    user.getType()
+            ));
+        }
+        return list;
     }
 }

@@ -7,15 +7,18 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@Entity
 @ToString
+@Entity
 public class User {
     @Id
+    private String userId;
     private String email;
     private String password;
-    private String type;
+    @Enumerated(EnumType.STRING)
+    private UserType type;
 
-    public User(String email, String password, String type) {
+    public User(String userId, String email, String password, UserType type) {
+        this.userId = userId;
         this.email = email;
         this.password = password;
         this.type = type;

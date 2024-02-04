@@ -1,8 +1,8 @@
 package edu.icet.controller;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXRadioButton;
 import com.jfoenix.controls.JFXTextField;
-import edu.icet.dto.EmailSenderDto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,10 +16,9 @@ public class ForgetPasswordController {
 
     @FXML
     private AnchorPane forgetPasswordPane;
-
     @FXML
     private JFXTextField txtEmail;
-
+    @FXML
     private JFXButton btnRequest;
 
     @FXML
@@ -38,15 +37,6 @@ public class ForgetPasswordController {
 
     @FXML
     void RequestButtonOnAction(ActionEvent event) {
-        String to = txtEmail.getText();
-        String subject = "Test Email";
-        String body = "This is an email from E&E System.";
-
-
-        EmailSenderDto.sendEmail(to, subject, body);
-
-
-        verifiedPageLoader();
     }
 
     private void verifiedPageLoader() {

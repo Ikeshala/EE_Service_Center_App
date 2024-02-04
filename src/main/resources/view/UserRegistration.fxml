@@ -19,7 +19,7 @@
             <Image url="@../images/logo-no-background.png" />
          </image>
       </ImageView>
-      <Label layoutX="423.0" layoutY="339.0" text="User Name" textFill="#202046" />
+      <Label layoutX="423.0" layoutY="339.0" text="User ID" textFill="#202046" />
       <Label layoutX="423.0" layoutY="398.0" text="Email address" textFill="#202046" />
       <JFXTextField fx:id="txtEmail" layoutX="423.0" layoutY="415.0" prefHeight="25.0" prefWidth="260.0" />
       <Label layoutX="423.0" layoutY="457.0" text="Password" textFill="#202046" />
@@ -75,6 +75,6 @@
       <AnchorPane layoutX="270.0" prefHeight="600.0" prefWidth="33.0" style="-fx-background-color: #202046;" />
       <JFXRadioButton fx:id="radAdmin" layoutX="509.0" layoutY="512.0" text="Admin" />
       <JFXRadioButton fx:id="radEmployee" layoutX="586.0" layoutY="512.0" prefHeight="17.0" prefWidth="86.0" text="Employee" />
-      <JFXTextField fx:id="txtUserName" layoutX="423.0" layoutY="356.0" prefHeight="25.0" prefWidth="260.0" />
+      <JFXTextField fx:id="txtUserId" layoutX="423.0" layoutY="356.0" prefHeight="25.0" prefWidth="260.0" />
    </children>
 </AnchorPane>

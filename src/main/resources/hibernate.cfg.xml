@@ -5,7 +5,7 @@
 <hibernate-configuration>
   <session-factory>
     <property name="connection.url">
-      jdbc:mysql://localhost:3307/EEServiceCenter?createDatabaseIfNotExist=true
+      jdbc:mysql://localhost:3307/EEServiceCenterDB?createDatabaseIfNotExist=true
     </property>
     <property name="connection.driver_class">
       com.mysql.cj.jdbc.Driver

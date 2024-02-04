@@ -1,17 +1,18 @@
 package edu.icet.dto.tm;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import edu.icet.entity.UserType;
+import lombok.*;
 
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
 public class UserTm extends RecursiveTreeObject<UserTm> {
-    private Long id;
-    private String name;
+    private String userId;
     private String email;
     private String password;
-
-    @Enumerated(EnumType.STRING)
     private UserType type;
+    private JFXButton btn;
 }
