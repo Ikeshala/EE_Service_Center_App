@@ -33,7 +33,7 @@
             <JFXTextField fx:id="txtUserId" focusColor="WHITE" layoutX="17.0" layoutY="291.0" prefHeight="25.0" prefWidth="237.0" />
             <Label layoutX="17.0" layoutY="329.0" text="Email" textFill="WHITE" />
             <JFXTextField fx:id="txtEmail" focusColor="WHITE" layoutX="17.0" layoutY="346.0" prefHeight="25.0" prefWidth="237.0" />
-            <JFXButton buttonType="RAISED" layoutX="69.0" layoutY="450.0" onAction="#updateButtonOnAction" prefHeight="38.0" prefWidth="116.0" style="-fx-border-color: WHITE; -fx-border-radius: 30;" text="Update" textFill="WHITE">
+            <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="69.0" layoutY="450.0" onAction="#updateButtonOnAction" prefHeight="38.0" prefWidth="116.0" style="-fx-border-color: WHITE; -fx-border-radius: 30;" text="Update" textFill="WHITE">
                <graphic>
                   <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -80,7 +80,7 @@
             </JFXButton>
             <Label layoutX="18.0" layoutY="386.0" text="Type" textFill="WHITE" />
             <JFXComboBox fx:id="cmbType" focusColor="WHITE" layoutX="18.0" layoutY="404.0" prefHeight="25.0" prefWidth="237.0" />
-            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="209.0" layoutY="180.0" onAction="#searchButtonOnAction" prefHeight="35.0" prefWidth="35.0">
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="209.0" layoutY="180.0" prefHeight="35.0" prefWidth="35.0">
                <graphic>
                   <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -98,7 +98,7 @@
             <JFXTextField fx:id="txtSearch" focusColor="WHITE" layoutX="15.0" layoutY="187.0" prefHeight="25.0" prefWidth="201.0" promptText="Search here..." />
          </children>
       </AnchorPane>
-      <JFXTreeTableView fx:id="tblItem" layoutX="276.0" layoutY="7.0" prefHeight="535.0" prefWidth="616.0" style="-fx-background-color: #E5E1DA;">
+      <JFXTreeTableView fx:id="tblUsers" layoutX="276.0" layoutY="7.0" prefHeight="535.0" prefWidth="616.0" style="-fx-background-color: #E5E1DA;">
          <columns>
             <TreeTableColumn fx:id="colUserId" prefWidth="107.0" text="User ID" />
             <TreeTableColumn fx:id="colEmail" prefWidth="209.0" text="Email" />

@@ -7,13 +7,13 @@ import edu.icet.bo.BoFactory;
 import edu.icet.bo.custom.UserBo;
 import edu.icet.dao.util.BoType;
 import edu.icet.dto.UserDto;
-import edu.icet.dto.tm.UserTm;
 import edu.icet.entity.UserType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -37,7 +37,16 @@ public class UserRegistrationController {
     @FXML
     private JFXTextField txtUserId;
 
+    private ToggleGroup userType;
+
     private UserBo userBo = BoFactory.getInstance().getBo(BoType.USER);
+
+    @FXML
+    void initialize() {
+        userType = new ToggleGroup();
+        radAdmin.setToggleGroup(userType);
+        radEmployee.setToggleGroup(userType);
+    }
 
     @FXML
     void backButtonOnAction(ActionEvent event) {

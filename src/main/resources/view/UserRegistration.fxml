@@ -6,6 +6,7 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.effect.Blend?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -74,7 +75,10 @@
          </children>
       </AnchorPane>
       <AnchorPane layoutX="270.0" prefHeight="600.0" prefWidth="33.0" style="-fx-background-color: #202046;" />
-      <JFXRadioButton fx:id="radAdmin" layoutX="509.0" layoutY="512.0" text="Admin" />
-      <JFXRadioButton fx:id="radEmployee" layoutX="586.0" layoutY="512.0" prefHeight="17.0" prefWidth="86.0" text="Employee" />
+      <JFXRadioButton fx:id="radAdmin" layoutX="509.0" layoutY="512.0" text="Admin">
+         <toggleGroup>
+            <ToggleGroup fx:id="userType" />
+         </toggleGroup></JFXRadioButton>
+      <JFXRadioButton fx:id="radEmployee" layoutX="586.0" layoutY="512.0" prefHeight="17.0" prefWidth="86.0" text="Employee" toggleGroup="$userType" />
    </children>
 </AnchorPane>

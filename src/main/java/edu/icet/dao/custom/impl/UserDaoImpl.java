@@ -47,10 +47,11 @@ public class UserDaoImpl implements UserDao {
     @Override
     public List<User> getAll() throws SQLException, ClassNotFoundException {
         Session session = HibernateUtil.getSession();
-        Query query = session.createQuery("FROM user");
+        Query<User> query = session.createQuery("FROM " + User.class.getSimpleName(), User.class);
         List<User> list = query.list();
         return list;
     }
+
 
     @Override
     public boolean searchUser(String id) {
