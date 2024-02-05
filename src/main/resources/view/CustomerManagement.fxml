@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="customerPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.CustomerManagementController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: #FE633D;">
+         <children>
+            <Label layoutX="71.0" layoutY="64.0" text="E&amp;E Customers" textAlignment="CENTER" textFill="#202046">
+               <font>
+                  <Font name="Gill Sans MT Ext Condensed Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="112.0" text="Embark on a Seamless Experience," textFill="#fffdfd" />
+            <Label layoutX="19.0" layoutY="129.0" text="Where Every Customer is a Treasured Partner!" textFill="WHITE" />
+            <ImageView fitHeight="50.0" fitWidth="61.0" layoutX="110.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/e--e-service-center-high-resolution-logo-white-transparent.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="17.0" layoutY="274.0" text="Customer ID" textFill="WHITE" />
+            <JFXTextField fx:id="txtCustomerId" focusColor="WHITE" layoutX="17.0" layoutY="291.0" prefHeight="25.0" prefWidth="237.0" />
+            <Label layoutX="17.0" layoutY="329.0" text="Customer Name" textFill="WHITE" />
+            <JFXTextField fx:id="txtCustomerName" focusColor="WHITE" layoutX="17.0" layoutY="346.0" prefHeight="25.0" prefWidth="237.0" />
+            <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="69.0" layoutY="450.0" onAction="#updateButtonOnAction" prefHeight="38.0" prefWidth="116.0" style="-fx-border-color: WHITE; -fx-border-radius: 30;" text="Update" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/renew.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="S_RESIZE" />
+                     </cursor>
+                     <effect>
+                        <Blend mode="COLOR_BURN" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="71.0" layoutY="544.0" onAction="#logoutButtonOnAction" prefHeight="17.0" prefWidth="111.0" text="Logout" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="1.0" layoutY="1.0" onAction="#backButtonOnAction" prefHeight="35.0" prefWidth="35.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_10.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="S_RESIZE" />
+                     </cursor>
+                     <effect>
+                        <Blend mode="COLOR_BURN" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="18.0" layoutY="386.0" text="Email" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="209.0" layoutY="180.0" prefHeight="35.0" prefWidth="35.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_15.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="S_RESIZE" />
+                     </cursor>
+                     <effect>
+                        <Blend mode="COLOR_BURN" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXTextField fx:id="txtSearch" focusColor="WHITE" layoutX="15.0" layoutY="187.0" prefHeight="25.0" prefWidth="201.0" promptText="Search here..." />
+            <JFXTextField fx:id="txtEmail" focusColor="WHITE" layoutX="18.0" layoutY="404.0" prefHeight="25.0" prefWidth="237.0" />
+         </children>
+      </AnchorPane>
+      <JFXTreeTableView fx:id="tblCustomers" layoutX="276.0" layoutY="7.0" prefHeight="535.0" prefWidth="616.0" style="-fx-background-color: #E5E1DA;">
+         <columns>
+            <TreeTableColumn fx:id="colCustomerId" prefWidth="127.0" text="Customer ID" />
+            <TreeTableColumn fx:id="colCustomerName" prefWidth="199.0" text="Customer Name" />
+            <TreeTableColumn fx:id="colEmail" prefWidth="169.0" text="Email" />
+            <TreeTableColumn fx:id="colAction" prefWidth="101.0" text="Action" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXButton layoutX="655.0" layoutY="558.0" onAction="#orderPlacementViewLinkButtonOnAction" prefHeight="40.0" prefWidth="237.0" text="Click here to place order..." textAlignment="RIGHT" textFill="#3886ce">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_18.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="S_RESIZE" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
