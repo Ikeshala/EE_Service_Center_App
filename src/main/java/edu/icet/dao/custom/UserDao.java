@@ -7,5 +7,4 @@ import edu.icet.entity.User;
 import java.sql.SQLException;
 
 public interface UserDao extends CrudDao<User> {
-    boolean searchUser(String id);
 }

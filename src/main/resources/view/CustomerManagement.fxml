@@ -32,7 +32,7 @@
             <JFXTextField fx:id="txtCustomerId" focusColor="WHITE" layoutX="17.0" layoutY="291.0" prefHeight="25.0" prefWidth="237.0" />
             <Label layoutX="17.0" layoutY="329.0" text="Customer Name" textFill="WHITE" />
             <JFXTextField fx:id="txtCustomerName" focusColor="WHITE" layoutX="17.0" layoutY="346.0" prefHeight="25.0" prefWidth="237.0" />
-            <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="69.0" layoutY="450.0" onAction="#updateButtonOnAction" prefHeight="38.0" prefWidth="116.0" style="-fx-border-color: WHITE; -fx-border-radius: 30;" text="Update" textFill="WHITE">
+            <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="139.0" layoutY="449.0" onAction="#updateButtonOnAction" prefHeight="38.0" prefWidth="116.0" style="-fx-border-color: WHITE; -fx-border-radius: 30;" text="Update" textFill="WHITE">
                <graphic>
                   <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -78,11 +78,13 @@
                </graphic>
             </JFXButton>
             <Label layoutX="18.0" layoutY="386.0" text="Email" textFill="WHITE" />
-            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="209.0" layoutY="180.0" prefHeight="35.0" prefWidth="35.0">
+            <JFXTextField fx:id="txtSearch" focusColor="WHITE" layoutX="46.0" layoutY="188.0" prefHeight="25.0" prefWidth="211.0" promptText="Search here..." />
+            <JFXTextField fx:id="txtEmail" focusColor="WHITE" layoutX="18.0" layoutY="404.0" prefHeight="25.0" prefWidth="237.0" />
+            <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="13.0" layoutY="449.0" onAction="#addButtonOnAction" prefHeight="38.0" prefWidth="116.0" style="-fx-border-color: WHITE; -fx-border-radius: 30;" text="Add" textFill="WHITE">
                <graphic>
                   <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/img_15.png" />
+                        <Image url="@../images/add%20(1).png" />
                      </image>
                      <cursor>
                         <Cursor fx:constant="S_RESIZE" />
@@ -92,9 +94,21 @@
                      </effect>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
             </JFXButton>
-            <JFXTextField fx:id="txtSearch" focusColor="WHITE" layoutX="15.0" layoutY="187.0" prefHeight="25.0" prefWidth="201.0" promptText="Search here..." />
-            <JFXTextField fx:id="txtEmail" focusColor="WHITE" layoutX="18.0" layoutY="404.0" prefHeight="25.0" prefWidth="237.0" />
+            <ImageView fitHeight="40.0" fitWidth="60.0" layoutX="13.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/output-onlinegiftools.gif" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="S_RESIZE" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+            </ImageView>
          </children>
       </AnchorPane>
       <JFXTreeTableView fx:id="tblCustomers" layoutX="276.0" layoutY="7.0" prefHeight="535.0" prefWidth="616.0" style="-fx-background-color: #E5E1DA;">

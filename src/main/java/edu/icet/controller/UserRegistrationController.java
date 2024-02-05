@@ -55,7 +55,7 @@ public class UserRegistrationController {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/UserManagement.fxml"))));
             stage.centerOnScreen();
             stage.setResizable(false);
-            stage.setTitle("Login");
+            stage.setTitle("User Management");
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();

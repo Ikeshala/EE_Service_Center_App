@@ -1,8 +1,8 @@
 package edu.icet.dao.custom.impl;
 
-import edu.icet.dao.custom.UserDao;
+import edu.icet.dao.custom.CustomerDao;
 import edu.icet.dao.util.HibernateUtil;
-import edu.icet.entity.User;
+import edu.icet.entity.Customer;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
@@ -10,10 +10,9 @@ import org.hibernate.query.Query;
 import java.sql.SQLException;
 import java.util.List;
 
-public class UserDaoImpl implements UserDao {
-
+public class CustomerDaoImpl implements CustomerDao {
     @Override
-    public boolean save(User entity) throws SQLException, ClassNotFoundException {
+    public boolean save(Customer entity) throws SQLException, ClassNotFoundException {
         Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
         session.save(entity);
@@ -23,14 +22,13 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public boolean update(User entity) throws SQLException, ClassNotFoundException {
+    public boolean update(Customer entity) throws SQLException, ClassNotFoundException {
         Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
-        User user = session.find(User.class, entity.getUserId());
-        user.setEmail(entity.getEmail());
-        user.setPassword(entity.getPassword());
-        user.setType(entity.getType());
-        session.save(user);
+        Customer customer = session.find(Customer.class, entity.getCustomerId());
+        customer.setCustomerName(entity.getCustomerName());
+        customer.setCustomerEmail(entity.getCustomerEmail());
+        session.save(customer);
         transaction.commit();
         return true;
     }
@@ -39,16 +37,16 @@ public class UserDaoImpl implements UserDao {
     public boolean delete(String value) throws SQLException, ClassNotFoundException {
         Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
-        session.delete(session.find(User.class,value));
+        session.delete(session.find(Customer.class,value));
         transaction.commit();
         return true;
     }
 
     @Override
-    public List<User> getAll() throws SQLException, ClassNotFoundException {
+    public List<Customer> getAll() throws SQLException, ClassNotFoundException {
         Session session = HibernateUtil.getSession();
-        Query<User> query = session.createQuery("FROM " + User.class.getSimpleName(), User.class);
-        List<User> list = query.list();
+        Query<Customer> query = session.createQuery("FROM " + Customer.class.getSimpleName(), Customer.class);
+        List<Customer> list = query.list();
         return list;
     }
 

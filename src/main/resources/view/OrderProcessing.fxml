@@ -51,21 +51,7 @@
             <Label layoutX="17.0" layoutY="379.0" text="Customer Name" textFill="WHITE" />
             <JFXTextField fx:id="txtCustomerName" focusColor="WHITE" layoutX="17.0" layoutY="396.0" prefHeight="25.0" prefWidth="237.0" />
             <Label layoutX="17.0" layoutY="435.0" text="Status" textFill="WHITE" />
-            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="212.0" layoutY="187.0" onAction="#searchButtonOnAction" prefHeight="35.0" prefWidth="35.0">
-               <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/img_15.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="S_RESIZE" />
-                     </cursor>
-                     <effect>
-                        <Blend mode="COLOR_BURN" />
-                     </effect>
-                  </ImageView>
-               </graphic>
-            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="212.0" layoutY="187.0" onAction="#searchButtonOnAction" prefHeight="35.0" prefWidth="35.0" />
             <JFXButton layoutX="71.0" layoutY="544.0" onAction="#logoutButtonOnAction" prefHeight="17.0" prefWidth="111.0" text="Logout" textFill="WHITE">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
@@ -93,7 +79,6 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXTextField fx:id="txtSearch" focusColor="WHITE" layoutX="18.0" layoutY="194.0" prefHeight="25.0" prefWidth="201.0" promptText="Search here..." />
             <JFXComboBox fx:id="cmbStatus" focusColor="WHITE" layoutX="17.0" layoutY="452.0" prefHeight="25.0" prefWidth="237.0" />
             <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="114.0" layoutY="486.0" onAction="#saveButtonOnAction" prefHeight="35.0" prefWidth="35.0" text="Button">
                <graphic>
@@ -110,6 +95,18 @@
                   </ImageView>
                </graphic>
             </JFXButton>
+            <JFXTextField fx:id="txtSearch" focusColor="WHITE" layoutX="46.0" layoutY="199.0" prefHeight="25.0" prefWidth="211.0" promptText="Search here..." />
+            <ImageView fitHeight="40.0" fitWidth="60.0" layoutX="13.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/output-onlinegiftools.gif" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="S_RESIZE" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+            </ImageView>
          </children>
       </AnchorPane>
       <JFXTreeTableView fx:id="tblItem" layoutX="279.0" layoutY="7.0" prefHeight="587.0" prefWidth="611.0" style="-fx-background-color: #E5E1DA;">
