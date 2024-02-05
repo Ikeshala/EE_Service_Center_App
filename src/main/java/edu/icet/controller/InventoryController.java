@@ -1,6 +1,8 @@
 package edu.icet.controller;
 
+import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTreeTableView;
+import edu.icet.dto.tm.ItemTm;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,19 +19,22 @@ public class InventoryController {
     private AnchorPane inventoryPane;
 
     @FXML
-    private JFXTreeTableView<?> tblItem;
+    private JFXTextField txtSearch;
 
     @FXML
-    private TreeTableColumn<?, ?> colCode;
+    private JFXTreeTableView<ItemTm> tblItem;
 
     @FXML
-    private TreeTableColumn<?, ?> colItemName;
+    private TreeTableColumn colCode;
 
     @FXML
-    private TreeTableColumn<?, ?> colQuantity;
+    private TreeTableColumn colItemName;
 
     @FXML
-    private TreeTableColumn<?, ?> colAction;
+    private TreeTableColumn colQuantity;
+
+    @FXML
+    private TreeTableColumn colAction;
 
     @FXML
     void backButtonOnAction(ActionEvent event) {

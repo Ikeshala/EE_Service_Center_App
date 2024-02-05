@@ -1,6 +1,7 @@
 package edu.icet.dao;
 
 import edu.icet.dao.custom.impl.CustomerDaoImpl;
+import edu.icet.dao.custom.impl.ItemDaoImpl;
 import edu.icet.dao.custom.impl.UserDaoImpl;
 import edu.icet.dao.util.DaoType;
 
@@ -14,6 +15,7 @@ public class DaoFactory {
         switch (type){
             case USER: return(T) new UserDaoImpl();
             case CUSTOMER: return(T) new CustomerDaoImpl();
+            case ITEM: return(T) new ItemDaoImpl();
         }
         return null;
     }

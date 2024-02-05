@@ -4,38 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Developed the user interface for customer management.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/CustomerBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/impl/CustomerBoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/CustomerManagementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/CustomerDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/tm/CustomerTm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/add (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/output-onlinegiftools.gif" afterDir="false" />
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Enhanced and updated the user interfaces of the project.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/ItemBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/impl/ItemBoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/ItemDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/ItemDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/ItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/tm/ItemTm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/ItemType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/bo/BoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/BoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/OrderPlacementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/OrderPlacementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/UserRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/UserRegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/CustomerManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/CustomerManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/ItemCatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/ItemCatalogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/BoType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/BoType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/DaoType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/DaoType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/back-electro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/business-profile (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/img_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/CustomerManagement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/CustomerManagement.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/OrderPlacement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/OrderPlacement.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/OrderProcessing.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/OrderProcessing.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/UserManagement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/UserManagement.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Inventory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Inventory.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ItemCatalog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ItemCatalog.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,12 +85,17 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.icet.entity" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\EE_Service_Center_App\src\main\resources\images" />
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\EE_Service_Center_App\src\main\resources\view" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="edu.icet.bo.custom" />
+      <recent name="edu.icet.dao.custom.impl" />
+      <recent name="edu.icet.dao" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.EE_Service_Center_App [javafx:run]">
@@ -194,7 +188,7 @@
       <workItem from="1707061485659" duration="1056000" />
       <workItem from="1707064021308" duration="516000" />
       <workItem from="1707064561815" duration="10044000" />
-      <workItem from="1707105772311" duration="16510000" />
+      <workItem from="1707105772311" duration="24876000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -460,15 +454,29 @@
       <option name="project" value="LOCAL" />
       <updated>1707111737206</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Completed CRUD operations for customer management.">
+      <option name="closed" value="true" />
+      <created>1707123029188</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1707123029188</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Enhanced and updated the user interfaces of the project.">
+      <option name="closed" value="true" />
+      <created>1707123110809</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1707123110809</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created the Order Placement view, and developed/modified the OrderPlacementController." />
-    <MESSAGE value="Created the User Management view, and developed/modified the UserManagementController." />
     <MESSAGE value="Created the User Registration view, and developed/modified the UserRegistrationController." />
     <MESSAGE value="Created the Reports view, and developed/modified the ReportsController." />
     <MESSAGE value="Integrated Hibernate dependency." />
@@ -492,6 +500,8 @@
     <MESSAGE value="Made modifications to the user management UI." />
     <MESSAGE value="Completed CRUD operations for user management." />
     <MESSAGE value="Developed the user interface for customer management." />
-    <option name="LAST_COMMIT_MESSAGE" value="Developed the user interface for customer management." />
+    <MESSAGE value="Completed CRUD operations for customer management." />
+    <MESSAGE value="Enhanced and updated the user interfaces of the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhanced and updated the user interfaces of the project." />
   </component>
 </project>

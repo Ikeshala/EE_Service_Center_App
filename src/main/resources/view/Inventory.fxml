@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import com.jfoenix.controls.JFXTreeTableView?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
@@ -40,6 +41,18 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXButton>
+            <JFXTextField fx:id="txtSearch" focusColor="WHITE" layoutX="47.0" layoutY="397.0" prefHeight="25.0" prefWidth="211.0" promptText="Search here..." />
+            <ImageView fitHeight="40.0" fitWidth="60.0" layoutX="14.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/output-onlinegiftools.gif" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="S_RESIZE" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+            </ImageView>
          </children>
       </AnchorPane>
       <AnchorPane layoutX="268.0" prefHeight="600.0" prefWidth="33.0" style="-fx-background-color: #202046;" />

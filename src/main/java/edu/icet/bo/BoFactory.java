@@ -1,6 +1,7 @@
 package edu.icet.bo;
 
 import edu.icet.bo.custom.impl.CustomerBoImpl;
+import edu.icet.bo.custom.impl.ItemBoImpl;
 import edu.icet.bo.custom.impl.UserBoImpl;
 
 import edu.icet.dao.util.BoType;
@@ -15,6 +16,7 @@ public class BoFactory {
         switch (type){
             case USER:return(T) new UserBoImpl();
             case CUSTOMER:return(T) new CustomerBoImpl();
+            case ITEM:return(T) new ItemBoImpl();
         }
         return null;
     }

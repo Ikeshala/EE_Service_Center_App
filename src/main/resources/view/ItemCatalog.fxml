@@ -14,7 +14,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="itemPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.ItemCatalogController">
    <children>
       <AnchorPane prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: #FE633D;">
@@ -56,7 +55,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="104.0" layoutY="484.0" onAction="#editButtonOnAction" prefHeight="35.0" prefWidth="35.0">
+            <JFXButton fx:id="btnUpdate" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="104.0" layoutY="484.0" onAction="#editButtonOnAction" prefHeight="35.0" prefWidth="35.0">
                <graphic>
                   <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -119,8 +118,8 @@
          <columns>
             <TreeTableColumn fx:id="colCategory" prefWidth="107.0" text="Category" />
             <TreeTableColumn fx:id="colCode" prefWidth="90.0" text="Code" />
-            <TreeTableColumn fx:id="colItemName" prefWidth="180.0" text="Item Name" />
-            <TreeTableColumn fx:id="colDescription" prefWidth="181.0" text="Description" />
+            <TreeTableColumn fx:id="colItemName" prefWidth="154.0" text="Item Name" />
+            <TreeTableColumn fx:id="colDescription" prefWidth="207.0" text="Description" />
             <TreeTableColumn fx:id="colQuantity" prefWidth="48.0" text="QTY" />
          </columns>
       </JFXTreeTableView>
