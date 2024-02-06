@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="orderProcessingPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.OrderProcessingController">
+<AnchorPane fx:id="orderProcessingPane" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #E5E1DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.OrderProcessingController">
    <children>
       <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutY="1.0" onAction="#backButtonOnAction" prefHeight="35.0" prefWidth="35.0">
          <graphic>
@@ -44,14 +44,12 @@
                   <Image url="@../images/e--e-service-center-high-resolution-logo-white-transparent.png" />
                </image>
             </ImageView>
-            <Label layoutX="17.0" layoutY="268.0" text="Order ID" textFill="WHITE" />
-            <JFXComboBox fx:id="cmbOrderId" focusColor="WHITE" layoutX="17.0" layoutY="286.0" prefHeight="25.0" prefWidth="237.0" />
-            <Label layoutX="17.0" layoutY="324.0" text="Customer ID" textFill="WHITE" />
-            <JFXTextField fx:id="txtCustomerId" focusColor="WHITE" layoutX="17.0" layoutY="341.0" prefHeight="25.0" prefWidth="237.0" />
-            <Label layoutX="17.0" layoutY="379.0" text="Customer Name" textFill="WHITE" />
-            <JFXTextField fx:id="txtCustomerName" focusColor="WHITE" layoutX="17.0" layoutY="396.0" prefHeight="25.0" prefWidth="237.0" />
-            <Label layoutX="17.0" layoutY="435.0" text="Status" textFill="WHITE" />
-            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="212.0" layoutY="187.0" onAction="#searchButtonOnAction" prefHeight="35.0" prefWidth="35.0" />
+            <Label layoutX="17.0" layoutY="237.0" text="Order ID" textFill="WHITE" />
+            <Label layoutX="17.0" layoutY="293.0" text="Customer ID" textFill="WHITE" />
+            <JFXTextField fx:id="txtCustomerId" focusColor="WHITE" layoutX="17.0" layoutY="310.0" prefHeight="25.0" prefWidth="237.0" />
+            <Label layoutX="17.0" layoutY="348.0" text="Item Code" textFill="WHITE" />
+            <JFXTextField fx:id="txtItemCode" focusColor="WHITE" layoutX="17.0" layoutY="365.0" prefHeight="25.0" prefWidth="237.0" />
+            <Label layoutX="17.0" layoutY="404.0" text="Status" textFill="WHITE" />
             <JFXButton layoutX="71.0" layoutY="544.0" onAction="#logoutButtonOnAction" prefHeight="17.0" prefWidth="111.0" text="Logout" textFill="WHITE">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
@@ -79,10 +77,27 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXComboBox fx:id="cmbStatus" focusColor="WHITE" layoutX="17.0" layoutY="452.0" prefHeight="25.0" prefWidth="237.0" />
-            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="114.0" layoutY="486.0" onAction="#saveButtonOnAction" prefHeight="35.0" prefWidth="35.0" text="Button">
+            <JFXComboBox fx:id="cmbStatus" focusColor="WHITE" layoutX="17.0" layoutY="421.0" prefHeight="25.0" prefWidth="237.0" />
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="22.0" layoutY="506.0" onAction="#saveButtonOnAction" prefHeight="35.0" prefWidth="35.0" text="Button" />
+            <JFXTextField fx:id="txtSearch" focusColor="WHITE" layoutX="46.0" layoutY="171.0" prefHeight="25.0" prefWidth="211.0" promptText="Search here..." />
+            <ImageView fitHeight="40.0" fitWidth="60.0" layoutX="13.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/output-onlinegiftools.gif" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="S_RESIZE" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+            </ImageView>
+            <JFXTextField fx:id="txtOrderId" focusColor="WHITE" layoutX="17.0" layoutY="255.0" prefHeight="25.0" prefWidth="237.0" />
+            <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="79.0" layoutY="464.0" onAction="#updateButtonOnAction" prefHeight="38.0" prefWidth="116.0" style="-fx-border-color: WHITE; -fx-border-radius: 30;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="23.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/img_16.png" />
                      </image>
@@ -95,28 +110,17 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXTextField fx:id="txtSearch" focusColor="WHITE" layoutX="46.0" layoutY="199.0" prefHeight="25.0" prefWidth="211.0" promptText="Search here..." />
-            <ImageView fitHeight="40.0" fitWidth="60.0" layoutX="13.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/output-onlinegiftools.gif" />
-               </image>
-               <cursor>
-                  <Cursor fx:constant="S_RESIZE" />
-               </cursor>
-               <effect>
-                  <Blend mode="COLOR_BURN" />
-               </effect>
-            </ImageView>
          </children>
       </AnchorPane>
-      <JFXTreeTableView fx:id="tblItem" layoutX="279.0" layoutY="7.0" prefHeight="587.0" prefWidth="611.0" style="-fx-background-color: #E5E1DA;">
+      <JFXTreeTableView fx:id="tblItem" layoutX="279.0" layoutY="7.0" prefHeight="587.0" prefWidth="813.0" style="-fx-background-color: #E5E1DA;">
          <columns>
             <TreeTableColumn fx:id="colOrderId" prefWidth="89.0" text="Order ID" />
             <TreeTableColumn fx:id="colCustomerId" prefWidth="90.0" text="Customer ID" />
-            <TreeTableColumn fx:id="colCustomerName" prefWidth="150.0" text="Customer Name" />
-            <TreeTableColumn fx:id="colStatus" prefWidth="99.0" text="Status" />
-            <TreeTableColumn fx:id="colAmount" prefWidth="99.0" text="Amount" />
-            <TreeTableColumn fx:id="colAction" prefWidth="71.0" text="Action" />
+            <TreeTableColumn fx:id="colItemCode" prefWidth="90.0" text="Item Code" />
+            <TreeTableColumn fx:id="colItemName" prefWidth="131.0" text="Item Name" />
+            <TreeTableColumn fx:id="colRepair" prefWidth="201.0" text="Rapair Details" />
+            <TreeTableColumn fx:id="colStatus" prefWidth="112.0" text="Status" />
+            <TreeTableColumn fx:id="colAction" prefWidth="90.0" text="Action" />
          </columns>
       </JFXTreeTableView>
    </children>

@@ -46,7 +46,7 @@ public class OrderPlacementController {
     private JFXComboBox<?> cmbCategory;
 
     @FXML
-    private JFXComboBox<?> cmbItemId;
+    private JFXComboBox<?> cmbItemCode;
 
     @FXML
     private JFXTextArea txtRepair;

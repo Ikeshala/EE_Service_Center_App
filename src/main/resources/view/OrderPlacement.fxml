@@ -75,8 +75,8 @@
             <Label layoutX="15.0" layoutY="111.0" text="Item Name" textFill="#202046" />
             <JFXTextField fx:id="txtItemName" editable="false" layoutX="15.0" layoutY="128.0" prefHeight="25.0" prefWidth="403.0" />
             <JFXComboBox fx:id="cmbCategory" layoutX="15.0" layoutY="65.0" prefHeight="25.0" prefWidth="200.0" />
-            <Label layoutX="248.0" layoutY="50.0" text="Item ID" textFill="#202046" />
-            <JFXComboBox fx:id="cmbItemId" layoutX="249.0" layoutY="65.0" prefHeight="25.0" prefWidth="168.0" />
+            <Label layoutX="248.0" layoutY="50.0" text="Item Code" textFill="#202046" />
+            <JFXComboBox fx:id="cmbItemCode" layoutX="249.0" layoutY="65.0" prefHeight="25.0" prefWidth="168.0" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="356.0" layoutY="418.0" prefHeight="120.0" prefWidth="434.0" style="-fx-border-color: #FE633D; -fx-border-radius: 5;">

@@ -1,5 +1,6 @@
 package edu.icet.controller;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTreeTableView;
@@ -19,40 +20,46 @@ public class OrderProcessingController {
     private AnchorPane orderProcessingPane;
 
     @FXML
-    private JFXComboBox<?> cmbOrderId;
-
-    @FXML
     private JFXTextField txtCustomerId;
 
     @FXML
-    private JFXTextField txtCustomerName;
-
-    @FXML
-    private JFXTextField txtSearch;
+    private JFXTextField txtItemCode;
 
     @FXML
     private JFXComboBox<?> cmbStatus;
 
     @FXML
+    private JFXTextField txtSearch;
+
+    @FXML
+    private JFXTextField txtOrderId;
+
+    @FXML
+    private JFXButton btnUpdate;
+
+    @FXML
     private JFXTreeTableView<?> tblItem;
 
     @FXML
-    private TreeTableColumn<?, ?> colOrderId;
+    private TreeTableColumn colOrderId;
 
     @FXML
-    private TreeTableColumn<?, ?> colCustomerId;
+    private TreeTableColumn colCustomerId;
 
     @FXML
-    private TreeTableColumn<?, ?> colCustomerName;
+    private TreeTableColumn colItemCode;
 
     @FXML
-    private TreeTableColumn<?, ?> colStatus;
+    private TreeTableColumn colItemName;
 
     @FXML
-    private TreeTableColumn<?, ?> colAmount;
+    private TreeTableColumn colRepair;
 
     @FXML
-    private TreeTableColumn<?, ?> colAction;
+    private TreeTableColumn colStatus;
+
+    @FXML
+    private TreeTableColumn colAction;
 
     @FXML
     void backButtonOnAction(ActionEvent event) {
@@ -88,7 +95,7 @@ public class OrderProcessingController {
     }
 
     @FXML
-    void searchButtonOnAction(ActionEvent event) {
+    void updateButtonOnAction(ActionEvent event) {
 
     }
 
