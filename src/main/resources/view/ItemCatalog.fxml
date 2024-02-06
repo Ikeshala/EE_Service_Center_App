@@ -116,10 +116,10 @@
       </AnchorPane>
       <JFXTreeTableView fx:id="tblItem" layoutX="276.0" layoutY="7.0" prefHeight="587.0" prefWidth="616.0" style="-fx-background-color: #E5E1DA;">
          <columns>
-            <TreeTableColumn fx:id="colCategory" prefWidth="107.0" text="Category" />
-            <TreeTableColumn fx:id="colCode" prefWidth="90.0" text="Code" />
+            <TreeTableColumn fx:id="colCategory" prefWidth="91.0" text="Category" />
+            <TreeTableColumn fx:id="colCode" prefWidth="86.0" text="Code" />
             <TreeTableColumn fx:id="colItemName" prefWidth="154.0" text="Item Name" />
-            <TreeTableColumn fx:id="colDescription" prefWidth="254.0" text="Description" />
+            <TreeTableColumn fx:id="colDescription" prefWidth="268.0" text="Description" />
          </columns>
       </JFXTreeTableView>
    </children>

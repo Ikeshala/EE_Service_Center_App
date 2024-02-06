@@ -55,6 +55,6 @@
          </children>
       </AnchorPane>
       <AnchorPane layoutX="270.0" prefHeight="600.0" prefWidth="33.0" style="-fx-background-color: #202046;" />
-      <JFXButton layoutX="578.0" layoutY="490.0" onAction="#forgotPasswordButtonOnAction" text="Forgot password" textFill="#3886ce" />
+      <JFXButton layoutX="474.0" layoutY="490.0" onAction="#forgotOrChangePasswordButtonOnAction" text="Forgot password | Change password" textFill="#3886ce" />
    </children>
 </AnchorPane>

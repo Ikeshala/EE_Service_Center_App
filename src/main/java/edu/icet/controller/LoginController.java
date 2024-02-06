@@ -5,18 +5,14 @@ import com.jfoenix.controls.JFXRadioButton;
 import com.jfoenix.controls.JFXTextField;
 import edu.icet.bo.custom.UserBo;
 import edu.icet.bo.custom.impl.UserBoImpl;
-import edu.icet.dto.UserDto;
-import edu.icet.entity.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 
 public class LoginController {
@@ -41,10 +37,10 @@ public class LoginController {
     void LoginButtonOnAction(ActionEvent event) {
     }
     @FXML
-    void forgotPasswordButtonOnAction(ActionEvent event) throws IOException {
+    void forgotOrChangePasswordButtonOnAction(ActionEvent event) throws IOException {
         Stage stage = (Stage)loginPane.getScene().getWindow();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ForgetPassword.fxml"))));
-        stage.setTitle("Forget Password?");
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ForgetOrChangePassword.fxml"))));
+        stage.setTitle("Forget or Change Password?");
         stage.show();
     }
 }

@@ -20,6 +20,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.sql.SQLIntegrityConstraintViolationException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class UserRegistrationController {
 
@@ -37,6 +39,7 @@ public class UserRegistrationController {
     @FXML
     private JFXTextField txtUserId;
 
+    @FXML
     private ToggleGroup userType;
 
     private UserBo userBo = BoFactory.getInstance().getBo(BoType.USER);
@@ -82,12 +85,20 @@ public class UserRegistrationController {
             new Alert(Alert.AlertType.ERROR, "Please fill in all fields!").show();
             return;
         }
+
+        // Validate the password
+        String password = txtPassword.getText();
+        if (!isValidPassword(password)) {
+            new Alert(Alert.AlertType.ERROR, "Invalid password format!").show();
+            return;
+        }
+
         try {
             String selectedRole = radAdmin.isSelected() ? "ADMIN" : "EMPLOYEE";
             UserDto userDto = new UserDto(
                     txtUserId.getText(),
                     txtEmail.getText(),
-                    txtPassword.getText(),
+                    password,
                     UserType.valueOf(selectedRole)
             );
 
@@ -102,6 +113,14 @@ public class UserRegistrationController {
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    private boolean isValidPassword(String password) {
+        String regex = "^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[@#$%^&+=!]).{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password);
+
+        return matcher.matches();
     }
 
     private boolean areFieldsEmpty() {
