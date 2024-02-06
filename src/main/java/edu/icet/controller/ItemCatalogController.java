@@ -73,9 +73,6 @@ public class ItemCatalogController {
     private TreeTableColumn colDescription;
 
     @FXML
-    private TreeTableColumn colQuantity;
-
-    @FXML
     private JFXButton btnUpdate;
 
     private ItemBo itemBo = BoFactory.getInstance().getBo(BoType.ITEM);

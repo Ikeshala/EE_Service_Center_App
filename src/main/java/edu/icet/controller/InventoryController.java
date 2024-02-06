@@ -47,7 +47,7 @@ public class InventoryController {
     private TreeTableColumn colQuantity;
 
     @FXML
-    private TreeTableColumn colAction;
+    private TreeTableColumn colStatus;
 
     @FXML
     void backButtonOnAction(ActionEvent event) {

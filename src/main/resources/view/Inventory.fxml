@@ -76,7 +76,7 @@
             <TreeTableColumn fx:id="colCode" prefWidth="90.0" text="Code" />
             <TreeTableColumn fx:id="colItemName" prefWidth="157.0" text="Item Name" />
             <TreeTableColumn fx:id="colQuantity" prefWidth="58.0" text="QTY" />
-            <TreeTableColumn fx:id="colAction" prefWidth="168.0" text="Action" />
+            <TreeTableColumn fx:id="colStatus" prefWidth="168.0" text="Status" />
          </columns>
       </JFXTreeTableView>
       <JFXButton buttonType="RAISED" layoutX="337.0" layoutY="555.0" text=" Red Zone">
