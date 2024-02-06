@@ -119,8 +119,7 @@
             <TreeTableColumn fx:id="colCategory" prefWidth="107.0" text="Category" />
             <TreeTableColumn fx:id="colCode" prefWidth="90.0" text="Code" />
             <TreeTableColumn fx:id="colItemName" prefWidth="154.0" text="Item Name" />
-            <TreeTableColumn fx:id="colDescription" prefWidth="207.0" text="Description" />
-            <TreeTableColumn fx:id="colQuantity" prefWidth="48.0" text="QTY" />
+            <TreeTableColumn fx:id="colDescription" prefWidth="254.0" text="Description" />
          </columns>
       </JFXTreeTableView>
    </children>

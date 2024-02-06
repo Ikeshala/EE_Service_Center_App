@@ -15,5 +15,4 @@ public class ItemDto {
     private String itemCode;
     private String itemName;
     private String description;
-    private int quantity;
 }

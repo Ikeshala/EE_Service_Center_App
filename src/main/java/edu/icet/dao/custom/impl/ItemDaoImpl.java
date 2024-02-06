@@ -29,7 +29,6 @@ public class ItemDaoImpl implements ItemDao {
         item.setCategory(entity.getCategory());
         item.setItemName(entity.getItemName());
         item.setDescription(entity.getDescription());
-        item.setQuantity(entity.getQuantity());
         session.save(item);
         transaction.commit();
         return true;

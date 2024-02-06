@@ -85,7 +85,6 @@ public class ItemCatalogController {
         colCode.setCellValueFactory(new TreeItemPropertyValueFactory<>("itemCode"));
         colItemName.setCellValueFactory(new TreeItemPropertyValueFactory<>("itemName"));
         colDescription.setCellValueFactory(new TreeItemPropertyValueFactory<>("description"));
-        colQuantity.setCellValueFactory(new TreeItemPropertyValueFactory<>("quantity"));
         loadItemsTable();
 
         cmbCategory.getItems().addAll(ItemType.ELECTRIC, ItemType.ELECTRONIC);
@@ -102,8 +101,7 @@ public class ItemCatalogController {
                         itemDto.getCategory(),
                         itemDto.getItemCode(),
                         itemDto.getItemName(),
-                        itemDto.getDescription(),
-                        itemDto.getQuantity()
+                        itemDto.getDescription()
                 );
                 tmList.add(itemTm);
             }
@@ -130,7 +128,6 @@ public class ItemCatalogController {
             txtItemCode.setText(itemTm.getItemCode());
             txtItemName.setText(itemTm.getItemName());
             txtDescription.setText(itemTm.getDescription());
-            txtQuantity.setText(String.valueOf(itemTm.getQuantity()));
         }
     }
 
@@ -146,8 +143,7 @@ public class ItemCatalogController {
                     cmbCategory.getValue(),
                     txtItemCode.getText(),
                     txtItemName.getText(),
-                    txtDescription.getText(),
-                    Integer.parseInt(txtQuantity.getText())
+                    txtDescription.getText()
             );
 
             boolean isSaved = itemBo.saveItem(itemDto);
@@ -169,8 +165,7 @@ public class ItemCatalogController {
         return cmbCategory.getValue() == null ||
                 txtItemCode.getText().isEmpty() ||
                 txtItemName.getText().isEmpty() ||
-                txtDescription.getText().isEmpty() ||
-                txtQuantity.getText().isEmpty();
+                txtDescription.getText().isEmpty();
     }
 
     private void clearFields() {
@@ -180,7 +175,6 @@ public class ItemCatalogController {
         txtItemCode.clear();
         txtItemName.clear();
         txtDescription.clear();
-        txtQuantity.clear();
 
         txtItemCode.setEditable(true);
     }
@@ -229,8 +223,7 @@ public class ItemCatalogController {
                     cmbCategory.getValue(),
                     selectedItem.getItemCode(),
                     txtItemName.getText(),
-                    txtDescription.getText(),
-                    Integer.parseInt(txtQuantity.getText())
+                    txtDescription.getText()
             );
 
             boolean isUpdated = itemBo.updateItem(updatedItem);

@@ -16,5 +16,4 @@ public class ItemTm extends RecursiveTreeObject<ItemTm> {
     private String itemCode;
     private String itemName;
     private String description;
-    private int quantity;
 }

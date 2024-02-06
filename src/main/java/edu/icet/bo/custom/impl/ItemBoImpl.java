@@ -19,8 +19,7 @@ public class ItemBoImpl implements ItemBo {
                 dto.getCategory(),
                 dto.getItemCode(),
                 dto.getItemName(),
-                dto.getDescription(),
-                dto.getQuantity()
+                dto.getDescription()
         ));
     }
 
@@ -30,8 +29,7 @@ public class ItemBoImpl implements ItemBo {
                 dto.getCategory(),
                 dto.getItemCode(),
                 dto.getItemName(),
-                dto.getDescription(),
-                dto.getQuantity()
+                dto.getDescription()
         ));
     }
 
@@ -54,8 +52,7 @@ public class ItemBoImpl implements ItemBo {
                     item.getCategory(),
                     item.getItemCode(),
                     item.getItemName(),
-                    item.getDescription(),
-                    item.getQuantity()
+                    item.getDescription()
             ));
         }
         return list;
