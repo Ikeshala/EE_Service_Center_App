@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Made some modifications to the inventory UI.">
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Implemented password validation during user registration.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/PlaceOrder.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/OrderPlacementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/OrderPlacementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/UserRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/UserRegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ForgetPassword.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ForgetOrChangePassword.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ItemCatalog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ItemCatalog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/OrderPlacement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/OrderPlacement.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_directory_selection": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/java",
-    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App",
+    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/resources/view",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,8 +75,8 @@
       <recent name="edu.icet.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ICM104\9. Standalone Application Development\WORKING\EE_Service_Center_App\src\main\resources\images" />
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\EE_Service_Center_App\src\main\resources\view" />
+      <recent name="D:\ICM104\9. Standalone Application Development\WORKING\EE_Service_Center_App\src\main\resources\images" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="edu.icet.bo.custom" />
@@ -175,7 +175,8 @@
       <workItem from="1707064021308" duration="516000" />
       <workItem from="1707064561815" duration="10044000" />
       <workItem from="1707105772311" duration="26218000" />
-      <workItem from="1707195159477" duration="2118000" />
+      <workItem from="1707195159477" duration="7033000" />
+      <workItem from="1707216554585" duration="1296000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -481,14 +482,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707195794238</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Implemented password validation during user registration.">
+      <option name="closed" value="true" />
+      <created>1707197443861</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1707197443861</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Configured Hibernate settings." />
     <MESSAGE value="Implemented DBConnection using the singleton design pattern." />
     <MESSAGE value="Implemented User and UserType Entities." />
     <MESSAGE value="Implemented UserDto" />
@@ -513,6 +521,7 @@
     <MESSAGE value="Completed CRUD operations for item management." />
     <MESSAGE value="Removed the quantity attribute from the item." />
     <MESSAGE value="Made some modifications to the inventory UI." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made some modifications to the inventory UI." />
+    <MESSAGE value="Implemented password validation during user registration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented password validation during user registration." />
   </component>
 </project>

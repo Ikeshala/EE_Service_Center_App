@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
@@ -62,54 +63,26 @@
             <Label layoutX="14.0" layoutY="14.0" text="Customer Details" textFill="#3886ce" />
             <Label layoutX="14.0" layoutY="48.0" text="Customer ID" textFill="#202046" />
             <Label layoutX="181.0" layoutY="48.0" text="Customer Name" textFill="#202046" />
-            <JFXTextField fx:id="txtCustomerName" layoutX="181.0" layoutY="65.0" prefHeight="25.0" prefWidth="241.0" />
+            <JFXTextField fx:id="txtCustomerName" editable="false" layoutX="181.0" layoutY="65.0" prefHeight="25.0" prefWidth="241.0" />
             <Label layoutX="15.0" layoutY="111.0" text="Email" textFill="#202046" />
-            <JFXTextField fx:id="txtEmail" layoutX="15.0" layoutY="128.0" prefHeight="25.0" prefWidth="222.0" />
-            <JFXButton alignment="CENTER_RIGHT" layoutX="259.0" layoutY="122.0" onAction="#customerManagementViewLinkButtonOnAction" prefHeight="40.0" prefWidth="168.0" text="Add new customer" textAlignment="RIGHT" textFill="#3886ce">
-               <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/img_9.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="S_RESIZE" />
-                     </cursor>
-                  </ImageView>
-               </graphic>
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </JFXButton>
+            <JFXTextField fx:id="txtEmail" editable="false" layoutX="15.0" layoutY="128.0" prefHeight="25.0" prefWidth="403.0" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="356.0" layoutY="193.0" prefHeight="171.0" prefWidth="434.0" style="-fx-border-color: #FE633D; -fx-border-radius: 5;">
+      <AnchorPane layoutX="356.0" layoutY="234.0" prefHeight="171.0" prefWidth="434.0" style="-fx-border-color: #FE633D; -fx-border-radius: 5;">
          <children>
             <Label layoutX="14.0" layoutY="14.0" text="Item Details" textFill="#3886ce" />
             <Label layoutX="14.0" layoutY="48.0" text="Category" textFill="#202046" />
             <Label layoutX="15.0" layoutY="111.0" text="Item Name" textFill="#202046" />
-            <JFXTextField fx:id="txtItemName" layoutX="15.0" layoutY="128.0" prefHeight="25.0" prefWidth="403.0" />
+            <JFXTextField fx:id="txtItemName" editable="false" layoutX="15.0" layoutY="128.0" prefHeight="25.0" prefWidth="403.0" />
             <JFXComboBox fx:id="cmbCategory" layoutX="15.0" layoutY="65.0" prefHeight="25.0" prefWidth="200.0" />
             <Label layoutX="248.0" layoutY="50.0" text="Item ID" textFill="#202046" />
             <JFXComboBox fx:id="cmbItemId" layoutX="249.0" layoutY="65.0" prefHeight="25.0" prefWidth="168.0" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="356.0" layoutY="377.0" prefHeight="162.0" prefWidth="434.0" style="-fx-border-color: #FE633D; -fx-border-radius: 5;">
+      <AnchorPane layoutX="356.0" layoutY="418.0" prefHeight="120.0" prefWidth="434.0" style="-fx-border-color: #FE633D; -fx-border-radius: 5;">
          <children>
-            <Label layoutX="14.0" layoutY="14.0" text="Payment Details" textFill="#3886ce" />
-            <Label layoutX="14.0" layoutY="46.0" text="Item Repairing Fee   : " textFill="#202046" />
-            <JFXTextField fx:id="txtRepairingFee" layoutX="136.0" layoutY="42.0" prefHeight="25.0" prefWidth="284.0" />
-            <Label layoutX="14.0" layoutY="90.0" text="Additional Parts Fee : " textFill="#202046" />
-            <JFXTextField fx:id="txtAdditionalPartsFee" layoutX="136.0" layoutY="86.0" prefHeight="25.0" prefWidth="284.0" />
-            <Label layoutX="14.0" layoutY="132.0" text="Total Payable     : " textFill="#202046">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label fx:id="lblTotal" layoutX="136.0" layoutY="132.0" text="45000.00" textFill="#202046">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
+            <Label layoutX="14.0" layoutY="14.0" text="Repair Details" textFill="#3886ce" />
+            <JFXTextArea fx:id="txtRepair" layoutX="14.0" layoutY="45.0" prefHeight="60.0" prefWidth="403.0" />
          </children>
       </AnchorPane>
       <JFXButton buttonType="RAISED" layoutX="356.0" layoutY="550.0" onAction="#placeOrderButtonOnAction" prefHeight="39.0" prefWidth="434.0" style="-fx-background-color: #FE633D; -fx-background-radius: 5;" text="Place Oreder" textAlignment="CENTER" textFill="WHITE">
@@ -131,6 +104,21 @@
                </effect>
             </ImageView>
          </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" layoutX="550.0" layoutY="185.0" onAction="#customerManagementViewLinkButtonOnAction" prefHeight="40.0" prefWidth="241.0" text="Click hereto add new customer..." textAlignment="RIGHT" textFill="#3886ce">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_9.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="S_RESIZE" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="13.0" />
+         </font>
       </JFXButton>
    </children>
 </AnchorPane>

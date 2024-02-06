@@ -6,6 +6,7 @@ import com.jfoenix.controls.JFXTextField;
 import edu.icet.bo.BoFactory;
 import edu.icet.bo.custom.UserBo;
 import edu.icet.dao.util.BoType;
+import edu.icet.dao.util.HibernateUtil;
 import edu.icet.dto.UserDto;
 import edu.icet.entity.UserType;
 import javafx.event.ActionEvent;
@@ -16,6 +17,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import org.hibernate.Session;
+import org.hibernate.query.Query;
 
 import java.io.IOException;
 import java.sql.SQLException;

@@ -10,6 +10,7 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.query.Query;
 
 public class HibernateUtil {
     private static SessionFactory sessionFactory = createSessionFactory();
@@ -33,4 +34,5 @@ public class HibernateUtil {
     public static Session getSession(){
         return sessionFactory.openSession();
     }
+
 }

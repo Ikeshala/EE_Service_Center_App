@@ -1,6 +1,7 @@
 package edu.icet.controller;
 
 import com.jfoenix.controls.JFXComboBox;
+import com.jfoenix.controls.JFXTextArea;
 import com.jfoenix.controls.JFXTextField;
 import edu.icet.bo.BoFactory;
 import edu.icet.bo.custom.CustomerBo;
@@ -30,7 +31,7 @@ public class OrderPlacementController {
     private Label lblOrderId;
 
     @FXML
-    private JFXTextField txtCustomerId;
+    private JFXComboBox<?> cmbCustomerId;
 
     @FXML
     private JFXTextField txtCustomerName;
@@ -48,13 +49,7 @@ public class OrderPlacementController {
     private JFXComboBox<?> cmbItemId;
 
     @FXML
-    private JFXTextField txtRepairingFee;
-
-    @FXML
-    private JFXTextField txtAdditionalPartsFee;
-
-    @FXML
-    private Label lblTotal;
+    private JFXTextArea txtRepair;
 
     private CustomerBo customerBo = BoFactory.getInstance().getBo(BoType.CUSTOMER);
 
