@@ -2,10 +2,8 @@ package edu.icet.entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @Setter
@@ -20,4 +18,14 @@ public class Item {
     private String itemCode;
     private String itemName;
     private String description;
+
+    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL)
+    private List<Orders> orders;
+
+    public Item(ItemType category, String itemCode, String itemName, String description) {
+        this.category = category;
+        this.itemCode = itemCode;
+        this.itemName = itemName;
+        this.description = description;
+    }
 }

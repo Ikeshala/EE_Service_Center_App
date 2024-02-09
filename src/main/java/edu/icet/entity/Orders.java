@@ -2,10 +2,7 @@ package edu.icet.entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -16,12 +13,14 @@ import javax.persistence.Id;
 public class Orders {
     @Id
     private String orderId;
-    private String customerId;
-    private String customerName;
-    private String customerEmail;
-    @Enumerated(EnumType.STRING)
-    private ItemType category;
-    private String itemCode;
-    private String itemName;
+
+    @ManyToOne
+    @JoinColumn(name = "itemCode")
+    private Item item;
+
+    @ManyToOne
+    @JoinColumn(name = "customerId")
+    private Customer customer;
+
     private String repair;
 }
