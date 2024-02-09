@@ -12,7 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-public class OrderDetailsTm extends RecursiveTreeObject<OrderDetailsTm> {
+public class OrdersTm extends RecursiveTreeObject<OrdersTm> {
     private String orderId;
     private String customerId;
     private String customerName;

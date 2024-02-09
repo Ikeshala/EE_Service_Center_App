@@ -4,27 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Modified the user interface for order processing.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/OrderDetailsBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/impl/OrderDetailsBoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/OrderDetailsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/OrderDetailsDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/OrderDetailsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/tm/OrderDetailsTm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/OrderDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/reports/customer_report.jrxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/PlaceOrder.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Implement the generation of customer details report in the report section.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/bo/BoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/BoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/ReportsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/ReportsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/OrderDetailsBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/OrdersBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/impl/OrderDetailsBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/impl/OrdersBoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/CustomerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/CustomerDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/ItemDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/ItemDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/OrderDetailsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/OrdersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/OrderDetailsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/OrdersDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/BoType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/BoType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/DaoType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/DaoType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/util/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dto/OrderDetailsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/OrdersDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dto/tm/OrderDetailsTm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/tm/OrdersTm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/entity/OrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/Orders.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +189,7 @@
       <workItem from="1707216554585" duration="6785000" />
       <workItem from="1707240184581" duration="847000" />
       <workItem from="1707281046214" duration="8001000" />
-      <workItem from="1707458819748" duration="880000" />
+      <workItem from="1707458819748" duration="1512000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -526,14 +519,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707220764465</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Implement the generation of customer details report in the report section.">
+      <option name="closed" value="true" />
+      <created>1707459925754</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1707459925754</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented UserDto" />
     <MESSAGE value="Implemented UserTm" />
     <MESSAGE value="Implemented CrudUtil" />
     <MESSAGE value="Implemented SuperDao" />
@@ -558,6 +558,7 @@
     <MESSAGE value="Implemented password validation during user registration." />
     <MESSAGE value="Updated the user interface for order placement." />
     <MESSAGE value="Modified the user interface for order processing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified the user interface for order processing." />
+    <MESSAGE value="Implement the generation of customer details report in the report section." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement the generation of customer details report in the report section." />
   </component>
 </project>

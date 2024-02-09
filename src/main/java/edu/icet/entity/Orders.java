@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @ToString
 @Entity
-public class OrderDetails {
+public class Orders {
     @Id
     private String orderId;
     private String customerId;

@@ -1,5 +1,5 @@
 package edu.icet.dao.util;
 
 public enum BoType {
-    USER, CUSTOMER, ITEM, ORDER_DETAILS
+    USER, CUSTOMER, ITEM, ORDERS
 }

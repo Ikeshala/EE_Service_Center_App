@@ -2,7 +2,7 @@ package edu.icet.dao.util;
 
 import edu.icet.entity.Customer;
 import edu.icet.entity.Item;
-import edu.icet.entity.OrderDetails;
+import edu.icet.entity.Orders;
 import edu.icet.entity.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -11,7 +11,6 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernate.query.Query;
 
 public class HibernateUtil {
     private static SessionFactory sessionFactory = createSessionFactory();
@@ -25,7 +24,7 @@ public class HibernateUtil {
                 .addAnnotatedClass(User.class)
                 .addAnnotatedClass(Customer.class)
                 .addAnnotatedClass(Item.class)
-                .addAnnotatedClass(OrderDetails.class)
+                .addAnnotatedClass(Orders.class)
                 .getMetadataBuilder()
                 .applyImplicitNamingStrategy(ImplicitNamingStrategyJpaCompliantImpl.INSTANCE)
                 .build();

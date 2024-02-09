@@ -7,14 +7,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class OrderDetailsDto {
+public class OrdersDto {
     private String orderId;
     private String customerId;
     private String customerName;
@@ -25,7 +22,7 @@ public class OrderDetailsDto {
     private String repair;
     private JFXButton btn;
 
-    public OrderDetailsDto(String orderId, String customerId, String customerName, String customerEmail, ItemType category, String itemCode, String itemName, String repair) {
+    public OrdersDto(String orderId, String customerId, String customerName, String customerEmail, ItemType category, String itemCode, String itemName, String repair) {
         this.orderId = orderId;
         this.customerId = customerId;
         this.customerName = customerName;
