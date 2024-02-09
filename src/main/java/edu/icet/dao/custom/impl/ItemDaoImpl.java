@@ -31,6 +31,7 @@ public class ItemDaoImpl implements ItemDao {
         item.setDescription(entity.getDescription());
         session.save(item);
         transaction.commit();
+        session.close();
         return true;
     }
 
@@ -40,6 +41,7 @@ public class ItemDaoImpl implements ItemDao {
         Transaction transaction = session.beginTransaction();
         session.delete(session.find(Item.class,value));
         transaction.commit();
+        session.close();
         return true;
     }
 
@@ -48,6 +50,7 @@ public class ItemDaoImpl implements ItemDao {
         Session session = HibernateUtil.getSession();
         Query<Item> query = session.createQuery("FROM " + Item.class.getSimpleName(), Item.class);
         List<Item> list = query.list();
+        session.close();
         return list;
     }
 

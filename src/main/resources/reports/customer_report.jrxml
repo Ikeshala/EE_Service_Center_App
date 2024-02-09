@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="customer_report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ce5b6161-5a2c-4538-bb5f-dd083eea276e">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (5)"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM customer
+ORDER BY customer.`customerName` ASC]]>
+	</queryString>
+	<field name="customerName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="customerName"/>
+		<property name="com.jaspersoft.studio.field.label" value="customerName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="customerId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="customerId"/>
+		<property name="com.jaspersoft.studio.field.label" value="customerId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="customerEmail" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="customerEmail"/>
+		<property name="com.jaspersoft.studio.field.label" value="customerEmail"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<group name="customerName">
+		<groupExpression><![CDATA[$F{customerName}]]></groupExpression>
+	</group>
+	<group name="customerId">
+		<groupExpression><![CDATA[$F{customerId}]]></groupExpression>
+	</group>
+	<group name="customerEmail">
+		<groupExpression><![CDATA[$F{customerEmail}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="169" splitType="Stretch">
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="171" y="9" width="230" height="160" uuid="504e4209-2223-4b2a-83ea-21afb6d6519d"/>
+				<imageExpression><![CDATA["D:/ICM104/9. Standalone Application Development/WORKING/EE_Service_Center_App/src/main/resources/images/logo-no-background.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="48" splitType="Stretch">
+			<staticText>
+				<reportElement x="122" y="9" width="329" height="30" forecolor="#FE633D" uuid="60a5ec87-f1f7-4b53-827e-7e28d9d56c12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ubuntu Condensed" size="16" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[<-- E&E All Customer Details Report -->]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="202" y="0" width="168" height="30" forecolor="#202046" uuid="744e0a6f-c1fe-443b-8acb-a5e750100c91">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="44a05fbc-372f-4de7-9af5-57cdf56c7572"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ubuntu Condensed" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer Contact No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="180" height="30" forecolor="#202046" uuid="3186f4ba-db82-4055-b35b-33b596592726">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="84a2a1d5-0f35-479c-91e5-9517b378527e"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ubuntu Condensed" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="202" height="30" forecolor="#202046" uuid="e5f977f3-805b-4521-9d13-3d7d57653c67">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="44a05fbc-372f-4de7-9af5-57cdf56c7572"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ubuntu Condensed" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer Name]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="0" y="0" width="202" height="30" forecolor="#202046" uuid="3be9a2a2-7274-49ad-baec-6fd174a7b9cc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="11957c6f-5d9f-4d5b-b20a-4e5033740549"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#202046"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ubuntu Condensed" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customerName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="202" y="0" width="168" height="30" forecolor="#202046" uuid="15db63fb-bfba-4e6e-93c9-13e097b2e96d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="44a05fbc-372f-4de7-9af5-57cdf56c7572"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ubuntu Condensed" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customerId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="180" height="30" forecolor="#202046" uuid="5bf22a3e-1d64-4d85-a383-674b6c053d10">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="84a2a1d5-0f35-479c-91e5-9517b378527e"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ubuntu Condensed" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customerEmail}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField>
+				<reportElement x="520" y="1" width="30" height="19" forecolor="#202046" uuid="f1ba53cb-61a3-478a-8755-0de7f1eaf394"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ubuntu Condensed" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="109" y="3" width="337" height="17" forecolor="#3886CE" uuid="e7b675a5-0d92-4a54-acc9-c1df4a308e20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Spectral" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Your Trusted Electronic & Electric Repair Partner!]]></text>
+			</staticText>
+			<textField pattern="MMM d, yyyy h:mm:ss a z">
+				<reportElement x="0" y="3" width="90" height="16" forecolor="#202046" uuid="6bf46932-3f34-4da5-9a1b-8b555c84811b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ubuntu Condensed" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</summary>
+</jasperReport>

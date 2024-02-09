@@ -32,6 +32,7 @@ public class UserDaoImpl implements UserDao {
         user.setType(entity.getType());
         session.save(user);
         transaction.commit();
+        session.close();
         return true;
     }
 
@@ -41,6 +42,7 @@ public class UserDaoImpl implements UserDao {
         Transaction transaction = session.beginTransaction();
         session.delete(session.find(User.class,value));
         transaction.commit();
+        session.close();
         return true;
     }
 
@@ -49,6 +51,7 @@ public class UserDaoImpl implements UserDao {
         Session session = HibernateUtil.getSession();
         Query<User> query = session.createQuery("FROM " + User.class.getSimpleName(), User.class);
         List<User> list = query.list();
+        session.close();
         return list;
     }
 

@@ -30,6 +30,7 @@ public class CustomerDaoImpl implements CustomerDao {
         customer.setCustomerEmail(entity.getCustomerEmail());
         session.save(customer);
         transaction.commit();
+        session.close();
         return true;
     }
 
@@ -39,6 +40,7 @@ public class CustomerDaoImpl implements CustomerDao {
         Transaction transaction = session.beginTransaction();
         session.delete(session.find(Customer.class,value));
         transaction.commit();
+        session.close();
         return true;
     }
 
@@ -47,6 +49,7 @@ public class CustomerDaoImpl implements CustomerDao {
         Session session = HibernateUtil.getSession();
         Query<Customer> query = session.createQuery("FROM " + Customer.class.getSimpleName(), Customer.class);
         List<Customer> list = query.list();
+        session.close();
         return list;
     }
 
