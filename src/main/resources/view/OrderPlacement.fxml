@@ -71,12 +71,12 @@
       <AnchorPane layoutX="356.0" layoutY="234.0" prefHeight="171.0" prefWidth="434.0" style="-fx-border-color: #FE633D; -fx-border-radius: 5;">
          <children>
             <Label layoutX="14.0" layoutY="14.0" text="Item Details" textFill="#3886ce" />
-            <Label layoutX="14.0" layoutY="48.0" text="Category" textFill="#202046" />
+            <Label layoutX="14.0" layoutY="48.0" text="Item Code" textFill="#202046" />
             <Label layoutX="15.0" layoutY="111.0" text="Item Name" textFill="#202046" />
             <JFXTextField fx:id="txtItemName" editable="false" layoutX="15.0" layoutY="128.0" prefHeight="25.0" prefWidth="403.0" />
-            <JFXComboBox fx:id="cmbCategory" layoutX="15.0" layoutY="65.0" prefHeight="25.0" prefWidth="200.0" />
-            <Label layoutX="248.0" layoutY="50.0" text="Item Code" textFill="#202046" />
-            <JFXComboBox fx:id="cmbItemCode" layoutX="249.0" layoutY="65.0" prefHeight="25.0" prefWidth="168.0" />
+            <Label layoutX="217.0" layoutY="48.0" text="Category" textFill="#202046" />
+            <JFXComboBox fx:id="cmbItemCode" layoutX="15.0" layoutY="65.0" prefHeight="25.0" prefWidth="168.0" />
+            <JFXTextField fx:id="txtCategory" editable="false" layoutX="217.0" layoutY="65.0" prefHeight="25.0" prefWidth="200.0" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="356.0" layoutY="418.0" prefHeight="120.0" prefWidth="434.0" style="-fx-border-color: #FE633D; -fx-border-radius: 5;">

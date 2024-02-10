@@ -30,16 +30,14 @@
                   <Image url="@../images/e--e-service-center-high-resolution-logo-white-transparent.png" />
                </image>
             </ImageView>
-            <Label layoutX="17.0" layoutY="179.0" text="Item Category" textFill="WHITE" />
-            <JFXComboBox fx:id="cmbCategory" focusColor="WHITE" layoutX="17.0" layoutY="197.0" prefHeight="25.0" prefWidth="237.0" />
-            <Label layoutX="17.0" layoutY="235.0" text="Item Code" textFill="WHITE" />
-            <JFXTextField fx:id="txtItemCode" focusColor="WHITE" layoutX="17.0" layoutY="252.0" prefHeight="25.0" prefWidth="237.0" />
-            <Label layoutX="17.0" layoutY="290.0" text="Item Name" textFill="WHITE" />
-            <JFXTextField fx:id="txtItemName" focusColor="WHITE" layoutX="17.0" layoutY="307.0" prefHeight="25.0" prefWidth="237.0" />
-            <Label layoutX="17.0" layoutY="345.0" text="Description" textFill="WHITE" />
-            <JFXTextArea fx:id="txtDescription" focusColor="WHITE" layoutX="17.0" layoutY="363.0" prefHeight="50.0" prefWidth="237.0" />
-            <Label layoutX="17.0" layoutY="427.0" text="Quantity" textFill="WHITE" />
-            <JFXTextField fx:id="txtQuantity" focusColor="WHITE" layoutX="17.0" layoutY="444.0" prefHeight="25.0" prefWidth="237.0" />
+            <Label layoutX="17.0" layoutY="239.0" text="Item Category" textFill="WHITE" />
+            <JFXComboBox fx:id="cmbCategory" focusColor="WHITE" layoutX="17.0" layoutY="257.0" prefHeight="25.0" prefWidth="237.0" />
+            <Label layoutX="17.0" layoutY="295.0" text="Item Code" textFill="WHITE" />
+            <JFXTextField fx:id="txtItemCode" focusColor="WHITE" layoutX="17.0" layoutY="312.0" prefHeight="25.0" prefWidth="237.0" />
+            <Label layoutX="17.0" layoutY="350.0" text="Item Name" textFill="WHITE" />
+            <JFXTextField fx:id="txtItemName" focusColor="WHITE" layoutX="17.0" layoutY="367.0" prefHeight="25.0" prefWidth="237.0" />
+            <Label layoutX="17.0" layoutY="405.0" text="Description" textFill="WHITE" />
+            <JFXTextArea fx:id="txtDescription" focusColor="WHITE" layoutX="17.0" layoutY="423.0" prefHeight="50.0" prefWidth="237.0" />
             <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="44.0" layoutY="484.0" onAction="#addButtonOnAction" prefHeight="35.0" prefWidth="35.0">
                <graphic>
                   <ImageView fitHeight="30.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
@@ -112,6 +110,18 @@
                   </ImageView>
                </graphic>
             </JFXButton>
+            <JFXTextField fx:id="txtSearch" focusColor="WHITE" layoutX="47.0" layoutY="168.0" prefHeight="25.0" prefWidth="211.0" promptText="Search here..." />
+            <ImageView fitHeight="40.0" fitWidth="60.0" layoutX="14.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/output-onlinegiftools.gif" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="S_RESIZE" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+            </ImageView>
          </children>
       </AnchorPane>
       <JFXTreeTableView fx:id="tblItem" layoutX="276.0" layoutY="7.0" prefHeight="587.0" prefWidth="616.0" style="-fx-background-color: #E5E1DA;">

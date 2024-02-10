@@ -29,7 +29,7 @@ public class ItemDaoImpl implements ItemDao {
         item.setCategory(entity.getCategory());
         item.setItemName(entity.getItemName());
         item.setDescription(entity.getDescription());
-        session.save(item);
+        session.update(item);
         transaction.commit();
         session.close();
         return true;
@@ -54,4 +54,12 @@ public class ItemDaoImpl implements ItemDao {
         return list;
     }
 
+    @Override
+    public Item getByCode(String itemCode) throws SQLException, ClassNotFoundException {
+        List<Item> items = getAll();
+        return items.stream()
+                .filter(i -> i.getItemCode().equals(itemCode))
+                .findFirst()
+                .orElse(null);
+    }
 }

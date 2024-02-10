@@ -5,9 +5,7 @@ import edu.icet.dao.DaoFactory;
 import edu.icet.dao.custom.CustomerDao;
 import edu.icet.dao.util.DaoType;
 import edu.icet.dto.CustomerDto;
-import edu.icet.dto.UserDto;
 import edu.icet.entity.Customer;
-import edu.icet.entity.User;
 
 import java.sql.SQLException;
 import java.util.ArrayList;

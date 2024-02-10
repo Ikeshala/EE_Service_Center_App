@@ -3,7 +3,6 @@ package edu.icet.controller;
 import edu.icet.bo.BoFactory;
 import edu.icet.bo.custom.impl.CustomerBoImpl;
 import edu.icet.dao.util.BoType;
-import edu.icet.db.DBConnection;
 import edu.icet.dto.CustomerDto;
 import edu.icet.entity.Customer;
 import javafx.event.ActionEvent;

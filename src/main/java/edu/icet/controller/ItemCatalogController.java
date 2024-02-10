@@ -5,12 +5,9 @@ import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import edu.icet.bo.BoFactory;
 import edu.icet.bo.custom.ItemBo;
 import edu.icet.dao.util.BoType;
-import edu.icet.dto.CustomerDto;
 import edu.icet.dto.ItemDto;
-import edu.icet.dto.tm.CustomerTm;
 import edu.icet.dto.tm.ItemTm;
 import edu.icet.entity.ItemType;
-import edu.icet.entity.UserType;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -23,12 +20,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
 import javafx.scene.control.cell.TreeItemPropertyValueFactory;
-import javafx.scene.effect.BlendMode;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
-import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -55,7 +47,7 @@ public class ItemCatalogController {
     private JFXTextArea txtDescription;
 
     @FXML
-    private JFXTextField txtQuantity;
+    private JFXTextField txtSearch;
 
     @FXML
     private JFXTreeTableView<ItemTm> tblItem;
@@ -83,6 +75,23 @@ public class ItemCatalogController {
         colItemName.setCellValueFactory(new TreeItemPropertyValueFactory<>("itemName"));
         colDescription.setCellValueFactory(new TreeItemPropertyValueFactory<>("description"));
         loadItemsTable();
+
+        txtSearch.textProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observableValue, String s, String newValue) {
+                String lowerCaseNewValue = newValue.toLowerCase();
+                tblItem.setPredicate(new Predicate<TreeItem<ItemTm>>() {
+                    @Override
+                    public boolean test(TreeItem<ItemTm> itemTmTreeItem) {
+                        String lowerCaseCode = itemTmTreeItem.getValue().getItemCode().toLowerCase();
+                        String lowerCaseDescription = itemTmTreeItem.getValue().getItemName().toLowerCase();
+
+                        return lowerCaseCode.contains(lowerCaseNewValue) ||
+                                lowerCaseDescription.contains(lowerCaseNewValue);
+                    }
+                });
+            }
+        });
 
         cmbCategory.getItems().addAll(ItemType.ELECTRIC, ItemType.ELECTRONIC);
     }
@@ -115,6 +124,7 @@ public class ItemCatalogController {
             setData(newValue != null ? newValue.getValue() : null);
         });
     }
+
 
     private void setData(ItemTm itemTm) {
         if (itemTm != null) {
@@ -195,6 +205,12 @@ public class ItemCatalogController {
         ItemTm selectedItem = tblItem.getSelectionModel().getSelectedItem().getValue();
         if (selectedItem != null) {
             try {
+                // Ensure that description is not null
+                String description = selectedItem.getDescription();
+                if (description == null || description.trim().isEmpty()) {
+                    description = "No description provided";
+                }
+
                 boolean isDeleted = itemBo.deleteItem(selectedItem.getItemCode());
                 if (isDeleted) {
                     new Alert(Alert.AlertType.INFORMATION, "Item Deleted!").show();

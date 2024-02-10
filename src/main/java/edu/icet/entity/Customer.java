@@ -20,7 +20,7 @@ public class Customer {
     private String customerName;
     private String customerEmail;
 
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "customerId", cascade = CascadeType.ALL)
     private List<Orders> orders;
 
     public Customer(String customerId, String customerName, String customerEmail) {

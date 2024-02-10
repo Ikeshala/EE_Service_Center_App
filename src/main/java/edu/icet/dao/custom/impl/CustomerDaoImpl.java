@@ -2,6 +2,7 @@ package edu.icet.dao.custom.impl;
 
 import edu.icet.dao.custom.CustomerDao;
 import edu.icet.dao.util.HibernateUtil;
+import edu.icet.dto.OrdersDto;
 import edu.icet.entity.Customer;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -53,4 +54,12 @@ public class CustomerDaoImpl implements CustomerDao {
         return list;
     }
 
+    @Override
+    public Customer getById(String customerId) throws SQLException, ClassNotFoundException {
+        List<Customer> customers = getAll();
+        return customers.stream()
+                .filter(c -> c.getCustomerId().equals(customerId))
+                .findFirst()
+                .orElse(null);
+    }
 }

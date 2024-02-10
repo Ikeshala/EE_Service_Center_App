@@ -3,6 +3,7 @@ package edu.icet.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -14,13 +15,18 @@ public class Orders {
     @Id
     private String orderId;
 
+    @Temporal(TemporalType.DATE)
+    private Date orderDate;
+
     @ManyToOne
     @JoinColumn(name = "itemCode")
-    private Item item;
+    private Item itemCode;
 
     @ManyToOne
     @JoinColumn(name = "customerId")
-    private Customer customer;
+    private Customer customerId;
 
     private String repair;
+    @Enumerated(EnumType.STRING)
+    private StatusType status = StatusType.PENDING;
 }

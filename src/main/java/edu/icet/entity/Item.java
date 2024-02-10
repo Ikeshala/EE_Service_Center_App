@@ -17,9 +17,10 @@ public class Item {
     @Id
     private String itemCode;
     private String itemName;
+    @Column(nullable = false)
     private String description;
 
-    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "itemCode", cascade = CascadeType.ALL)
     private List<Orders> orders;
 
     public Item(ItemType category, String itemCode, String itemName, String description) {

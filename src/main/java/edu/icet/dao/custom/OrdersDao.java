@@ -5,8 +5,7 @@ import edu.icet.dto.OrdersDto;
 import edu.icet.entity.Orders;
 
 import java.sql.SQLException;
-import java.util.List;
 
 public interface OrdersDao extends CrudDao<Orders> {
-    boolean saveOrderDetails(List<OrdersDto> list) throws SQLException, ClassNotFoundException;
+    OrdersDto getLastOrder() throws SQLException, ClassNotFoundException;
 }

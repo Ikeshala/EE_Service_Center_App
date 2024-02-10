@@ -2,9 +2,7 @@ package edu.icet.bo.custom;
 
 import edu.icet.bo.SuperBo;
 import edu.icet.dto.UserDto;
-import javafx.collections.ObservableList;
 
-import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.List;
 
