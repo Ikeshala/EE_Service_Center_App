@@ -23,10 +23,8 @@ public class OrdersBoImpl implements OrdersBo {
     @Override
     public boolean saveOrders(OrdersDto dto) throws SQLException, ClassNotFoundException {
         Orders orders = new Orders();
-        Date currentDate = new Date(System.currentTimeMillis());
-
         orders.setOrderId(dto.getOrderId());
-        orders.setOrderDate(currentDate);
+        orders.setOrderDate(dto.getOrderDate());
         orders.setCustomerId(customerDao.getById(dto.getCustomerId()));
         orders.setItemCode(itemDao.getByCode(dto.getItemCode()));
         orders.setRepair(dto.getRepair());
@@ -36,13 +34,20 @@ public class OrdersBoImpl implements OrdersBo {
 
     @Override
     public boolean updateOrders(OrdersDto dto) throws SQLException, ClassNotFoundException {
-        Orders orders = new Orders();
-        orders.setOrderId(dto.getOrderId());
-        orders.setCustomerId(customerDao.getById(dto.getCustomerId()));
-        orders.setItemCode(itemDao.getByCode(dto.getItemCode()));
-        orders.setRepair(dto.getRepair());
-        orders.setStatus(dto.getStatus());
-        return ordersDao.update(orders);
+        Orders existingOrder = ordersDao.getAll().stream()
+                .filter(order -> order.getOrderId().equals(dto.getOrderId()))
+                .findFirst()
+                .orElse(null);
+        if (existingOrder == null) {
+            return false;
+        }
+
+        existingOrder.setCustomerId(customerDao.getById(dto.getCustomerId()));
+        existingOrder.setItemCode(itemDao.getByCode(dto.getItemCode()));
+        existingOrder.setRepair(dto.getRepair());
+        existingOrder.setStatus(dto.getStatus());
+
+        return ordersDao.update(existingOrder);
     }
 
     @Override
@@ -64,9 +69,6 @@ public class OrdersBoImpl implements OrdersBo {
             OrdersDto dto = new OrdersDto();
             dto.setOrderId(order.getOrderId());
             dto.setCustomerId(order.getCustomerId().getCustomerId());
-            dto.setCustomerName(order.getCustomerId().getCustomerName());
-            dto.setCustomerEmail(order.getCustomerId().getCustomerEmail());
-            dto.setCategory(order.getItemCode().getCategory());
             dto.setItemCode(order.getItemCode().getItemCode());
             dto.setItemName(order.getItemCode().getItemName());
             dto.setRepair(order.getRepair());

@@ -15,8 +15,6 @@ public class OrdersDaoImpl implements OrdersDao {
 
     @Override
     public boolean save(Orders entity) throws SQLException, ClassNotFoundException {
-        Date currentDate = new Date();
-        entity.setOrderDate(currentDate);
         Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
         session.save(entity);

@@ -13,9 +13,6 @@ import edu.icet.dto.CustomerDto;
 import edu.icet.dto.ItemDto;
 import edu.icet.dto.OrdersDto;
 import edu.icet.dto.tm.OrdersTm;
-import edu.icet.entity.Customer;
-import edu.icet.entity.Item;
-import edu.icet.entity.Orders;
 import edu.icet.entity.StatusType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -28,14 +25,10 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class OrderPlacementController {
 
@@ -189,13 +182,11 @@ public class OrderPlacementController {
 
         OrdersDto orderDto = new OrdersDto();
         orderDto.setOrderId(orderId);
+        orderDto.setOrderDate(LocalDate.now().toString());
         orderDto.setCustomerId(customerId);
         orderDto.setItemCode(itemCode);
         orderDto.setRepair(repair);
         orderDto.setStatus(StatusType.PENDING);
-
-        LocalDate orderDate = LocalDate.now();
-        orderDto.setOrderDate(orderDate);
 
         try {
             boolean success = ordersBo.saveOrders(orderDto);

@@ -14,9 +14,8 @@ import java.util.Date;
 public class Orders {
     @Id
     private String orderId;
-
-    @Temporal(TemporalType.DATE)
-    private Date orderDate;
+    @Column(nullable = false)
+    private String orderDate;
 
     @ManyToOne
     @JoinColumn(name = "itemCode")

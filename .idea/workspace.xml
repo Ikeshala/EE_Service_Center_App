@@ -4,34 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Map the entities.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/StatusType.java" afterDir="false" />
+    <list default="true" id="f5872d33-1ec5-4b6b-8a13-9eed32bda3f8" name="Changes" comment="Implemented &quot;Place Order&quot; functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/OrdersBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/OrdersBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/UserBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/UserBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/impl/CustomerBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/impl/CustomerBoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/impl/OrdersBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/bo/custom/impl/OrdersBoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/ForgetPasswordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/ForgetPasswordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/ItemCatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/ItemCatalogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/OrderPlacementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/OrderPlacementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/OrderProcessingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/OrderProcessingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/ReportsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/ReportsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/controller/UserRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/controller/UserRegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/CustomerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/ItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/ItemDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/OrdersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/OrdersDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/CustomerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/CustomerDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/ItemDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/ItemDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/OrdersDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dao/custom/impl/OrdersDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dto/OrdersDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/OrdersDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/dto/tm/OrdersTm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/dto/tm/OrdersTm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/icet/entity/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/icet/entity/Orders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ItemCatalog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ItemCatalog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/OrderPlacement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/OrderPlacement.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/OrderProcessing.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/OrderProcessing.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +186,8 @@
       <workItem from="1707458819748" duration="4324000" />
       <workItem from="1707537252683" duration="5392000" />
       <workItem from="1707545052317" duration="7157000" />
-      <workItem from="1707575533779" duration="8634000" />
+      <workItem from="1707575533779" duration="19039000" />
+      <workItem from="1707624359719" duration="6842000" />
     </task>
     <task id="LOCAL-00001" summary="Added dependencies.">
       <option name="closed" value="true" />
@@ -560,14 +541,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707461549997</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Implemented &quot;Place Order&quot; functionality">
+      <option name="closed" value="true" />
+      <created>1707598264128</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1707598264128</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented SuperDao" />
     <MESSAGE value="Implemented CrudDao" />
     <MESSAGE value="Implemented UserDao and UserDaoImpl." />
     <MESSAGE value="Implemented UserBo and UserBoImpl." />
@@ -592,6 +580,7 @@
     <MESSAGE value="Implement the generation of customer details report in the report section." />
     <MESSAGE value="Rename 'Order Details' to 'Orders'." />
     <MESSAGE value="Map the entities." />
-    <option name="LAST_COMMIT_MESSAGE" value="Map the entities." />
+    <MESSAGE value="Implemented &quot;Place Order&quot; functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented &quot;Place Order&quot; functionality" />
   </component>
 </project>
